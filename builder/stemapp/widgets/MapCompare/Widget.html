@@ -1,0 +1,40 @@
+<div>
+  <div class="jimu-widget-subtitle">${nls.title}</div>
+  <div class="jimu-navbar jimu-r-row">
+    <div class="jimu-icon-btn btn-1 view-mode col-1-5" data-mode="full"></div>
+    <div class="jimu-icon-btn btn-2 view-mode col-1-5" data-mode="lr"></div>
+    <div class="jimu-icon-btn btn-3 view-mode col-1-5" data-mode="ud"></div>
+    <div class="jimu-icon-btn btn-4 view-mode col-1-5" data-mode="lr-g"></div>
+    <div class="jimu-icon-btn btn-5 view-mode col-1-5" data-mode="ud-g"></div>
+  </div>
+  <table class="jimu-table layers-list">
+    <!-- header -->
+    <tr style="height: 17px;">
+      <td>
+        <table class="jimu-table">
+          <thead class="layers-list-header">
+            <tr>
+              <TH class="col-select"></TH>
+              <TH class="col-cmp col-b">${nls.labelBoth}</TH>
+              <TH class="col-cmp col-l">${nls.labelLeft}</TH>
+              <TH class="col-cmp col-r">${nls.labelRight}</TH>
+              <TH class="col-layer-label">${nls.labelLayer}</TH>
+            </tr>
+          </thead>
+        </table>
+      </td>
+    </tr>
+    <!-- body -->
+    <tr class="auto-height">
+      <td>
+        <div class="layers-body-wrapper">
+          <table class="jimu-table">
+            <tbody class="layers-list-body" data-dojo-attach-point="layersList"></tbody>      
+          </table>
+        </div>
+      </td>
+    </tr>
+    
+    
+  </table>
+</div>

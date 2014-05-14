@@ -1,0 +1,24 @@
+{
+  "layer": {
+    "url": "http://maps.ngdc.noaa.gov/arcgis/rest/services/web_mercator/hazards/MapServer/1",
+    "expression": "CAUSE like '[value]'",
+    "textsearchlabel": "Filter by CAUSE... [ Example: Earthquake% ]",
+    "textsearchhint": "CAUSE",
+    "titlefield": "CAUSE",
+    "linkfield": "",
+    "fields": {
+      "all": false,
+      "field": [{
+        "name": "CAUSE"
+      }]
+    }
+  },
+  "defaultValue": "",
+  "zoomscale": 10000,
+  "symbol": {
+    "url": "images/earthquake.png",
+    "height": 31,
+    "width": 22,
+    "type": "esriPMS"
+  }
+}

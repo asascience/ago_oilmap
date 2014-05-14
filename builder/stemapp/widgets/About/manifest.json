@@ -1,0 +1,15 @@
+{
+  "name": "About",
+  "2D": true,
+  "3D": true,
+  "platform": "HTML",
+  "version": "0.0.1",
+  "author": "Esri R&D Center Beijing",
+  "description": "the widget",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "inPanel": false,
+    "hasConfig": false
+  }
+}

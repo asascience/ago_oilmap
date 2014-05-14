@@ -1,0 +1,50 @@
+.jimu-widget-about{
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+.jimu-widget-about .overlay{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+.jimu-widget-about .content{
+  width: 340px;
+  height: 271px;
+  position: absolute;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.jimu-widget-about .logo{
+  margin: auto;
+  display: block;
+  width: 40px;
+  margin-top:27px;
+  margin-bottom: 25px;
+}
+.jimu-widget-about .app-name, .jimu-widget-about .version{
+  text-align: center;
+  margin-top: 20px;
+  color: #686868;
+}
+.jimu-widget-about .app-name{
+  font-size: 16px;
+}
+.jimu-widget-about .version{
+  font-size: 14px;
+}
+.jimu-widget-about .line{
+  margin: 20px 10px;
+  height: 0;
+  border-bottom: 1px dashed;
+}
+.jimu-widget-about .jimu-btn{
+  float: none;
+  margin: auto;
+  width: 84px;
+}

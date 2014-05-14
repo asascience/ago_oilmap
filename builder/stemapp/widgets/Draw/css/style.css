@@ -1,0 +1,26 @@
+.jimu-widget-draw{
+	font-size:14px;
+}
+.jimu-widget-draw .dijitArrowButtonContainer{
+	width: 40px;
+}
+.jimu-widget-draw .dijitSelect{
+	height: 40px;
+	width: 100%;
+}
+
+.dijitReset.dijitLeft.dijitButtonNode.dijitArrowButton.dijitDownArrowButton{
+	width:100%;
+}
+
+.dijitReset.dijitLeft.dijitButtonNode.dijitArrowButton.dijitUpArrowButton{
+	width:100%;
+}
+
+.dijitReset.dijitLeft.dijitButtonNode.dijitArrowButton.dijitDownArrowButton .dijitArrowButtonInner{
+	width:100%;
+}
+
+.dijitReset.dijitLeft.dijitButtonNode.dijitArrowButton.dijitUpArrowButton .dijitArrowButtonInner{
+	width:100%;
+}

@@ -1,0 +1,8 @@
+{
+  "serviceURL": "//utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+  "defaultTitle": "ArcGIS WebMap",
+  "defaultAuthor": "ArcGIS WebApp Builder",
+  "defaultCopyright": "",
+  "defaultFormat": "PDF",
+  "defaultLayout": "Letter ANSI A Landscape"
+}

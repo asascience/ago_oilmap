@@ -1,0 +1,148 @@
+{
+  "theme": {
+    "name": "FoldableTheme"
+  },
+  "portalUrl": "http://www.arcgis.com",
+  "appId": "senJpIJA845L4FlP",
+  "title": "ArcGIS Web Application",
+  "subtitle": "with ArcGIS WebApp Builder",
+  "httpProxy": "/proxy.js",
+
+  "geometryService": {
+    "url": "http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer"
+  },
+
+  "links": [{
+    "label": "ArcGIS Online",
+    "url": "//www.arcgis.com"
+  }],
+
+  "preloadWidgets": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/TitlePanel/Panel"
+    },
+    "widgets": [{
+      "uri": "widgets/HeaderController/Widget",
+      "positionRelativeTo": "browser",
+      "position": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "height": 40
+      }
+    }],
+    "groups": [{
+      "widgets": [{
+        "label": "Legend",
+        "uri": "widgets/Legend/Widget"
+      }],
+      "panel": {
+        "uri": "themes/FoldableTheme/panels/SimpleBorderPanel/Panel",
+        "positionRelativeTo": "browser",
+        "position": {
+          "top": 40,
+          "left": 0,
+          "bottom": 0,
+          "width": 320
+        }
+      }
+    },{
+      "widgets": [{
+        "label": "Bookmark",
+        "uri": "widgets/Bookmark/Widget"
+      }],
+      "panel": {
+        "uri": "themes/FoldableTheme/panels/SimpleBorderPanel/Panel",
+        "positionRelativeTo": "browser",
+        "position": {
+          "top": 40,
+          "right": 0,
+          "bottom": 0,
+          "width": 320
+        }
+      }
+    }]
+  },
+
+  "map": {
+    "3D": false,
+    "2D": true,
+
+    "position": {
+      "left": 320,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+
+    "itemId": "a5ec3b581de145d7a801dd3e62304394"
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "positionRelativeTo": "map",
+      "position": {
+        "top": 10,
+        "right": 10,
+        "bottom": 10
+      }
+    },
+
+    "groups": [{
+      "label": "HistogramTimeSlider",
+      "widgets": [{
+        "label": "HistogramTimeSlider",
+        "uri": "widgets/HistogramTimeSlider/Widget",
+      }],
+      "panel": {
+        "uri": "themes/FoldableTheme/panels/DockablePanel/Panel",
+        "positionRelativeTo": "map",
+        "position": {
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "height": 220
+        },
+        "options": {
+          "region": "bottom",
+          "resizeMap": false
+        }
+      }
+    }, {
+      "label": "samples",
+      "widgets": [{
+        "label": "Demo",
+        "uri": "widgets/samplewidgets/Demo/Widget",
+      }, {
+        "label": "Simple",
+        "uri": "widgets/samplewidgets/Simple/Widget",
+      }]
+    }],
+
+    "widgets": [{
+      "label": "Search",
+      "uri": "widgets/Search/Widget"
+    }, {
+      "label": "Edit",
+      "uri": "widgets/Edit/Widget"
+    }, {
+      "label": "LayerList",
+      "uri": "widgets/LayerList/Widget"
+    }, {
+      "label": "Chart",
+      "uri": "widgets/Chart/Widget"
+    }, {
+      "label": "Draw",
+      "uri": "widgets/Draw/Widget"
+    }, {
+      "label": "Print",
+      "uri": "widgets/Print/Widget"
+    }, {
+      "label": "Directions",
+      "uri": "widgets/Directions/Widget"
+    }, {
+      "label": "Geoprocessing",
+      "uri": "widgets/Geoprocessing/Widget"
+    }]
+  }
+}

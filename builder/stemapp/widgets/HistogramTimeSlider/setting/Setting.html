@@ -1,0 +1,55 @@
+<div style="width:100%;height:100%;">
+  <div class="settings-section" data-dojo-attach-point="searchesSection">
+    <table class="setting-table input-table" cellspacing="0">
+      <tbody>
+        <tr>
+          <td class="first">*${nls.dateFormat}</td>
+          <td class="second">
+            <input type="text" data-dojo-type="dijit/form/ValidationTextBox" required="true"
+            placeHolder="DateFormat(selector: 'date', fullYear: true)"
+            data-dojo-attach-point="dateFormat" data-dojo-props='style:{width:"100%"}' />
+          </td>
+        </tr>
+        <tr>
+          <td class="first">${nls.mode}</td>
+          <td class="second">
+            <select data-dojo-attach-point="mode" 
+            data-dojo-type="dijit/form/Select">
+              <option value="show_all" selected="selected">All</option>
+              <option value="show_partial">Partial</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="first">${nls.timeInterval}</td>
+          <td class="second">
+            <select data-dojo-attach-point="timeInterval" 
+            data-dojo-type="dijit/form/Select">
+              <option value="esriTimeUnitsCenturies" selected="selected">Centuries</option>
+              <option value="esriTimeUnitsMilliseconds">Milliseconds</option> 
+              <option value="esriTimeUnitsSeconds">Seconds</option>
+              <option value="esriTimeUnitsMinutes">Minutes</option>
+              <option value="esriTimeUnitsHours">Hours</option>
+              <option value="esriTimeUnitsDays">Days</option>
+              <option value="esriTimeUnitsWeeks">Weeks</option>
+              <option value="esriTimeUnitsMonths">Months</option>
+              <option value="esriTimeUnitsYears">Years</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr></td>
+        </tr>
+        <tr>
+          <td class="first">${nls.layer}</td>
+          <td class="second">
+          <select data-dojo-attach-point="selectLayer" 
+          data-dojo-type="dijit/form/Select"/>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+    <button data-dojo-type="dijit/form/Button" type="button" data-dojo-attach-event="click:add">${nls.add}</button><br>
+    <div data-dojo-attach-point="tableTimeSlider"></div>
+  </div>
+</div>

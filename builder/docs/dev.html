@@ -1,0 +1,972 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Developer's Guide - ArcGIS WebApp Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/esri.ico" />
+  <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/docs.css" />
+  <link rel="stylesheet" href="css/font.css" />
+  <link rel="stylesheet" href="css/header.css" />
+</head>
+<body style="position:relative;">
+  <div class="header">
+      <div class="container">
+        <div class="navbar-header">
+          <a id="navbarBrand" class="navbar-brand">ArcGIS WebApp Builder</a>
+        </div>
+        <ul class="nav navbar-nav header-nav">
+          <li class="index">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="getting-start">
+            <a href="getting-start.html">Getting Started</a>
+          </li>
+          <li class="config">
+            <a href="config.html">Configuration Reference</a>
+          </li>
+          <li class="dev selected">
+            <a href="dev.html">Developer Guide</a>
+          </li>
+        </ul>
+        <a class="header-logo" href="http://www.esri.com" target="_blank">
+          <img src="images/logo_esri.png" />
+        </a>
+      </div>
+    </div>
+  <div id="root" data-offset="0"> 
+    <div class="banner">
+      <div class="banner-txt">
+        <h1>Developer's Guide</h1>
+        <p>
+          For developing your own widgets and themes. 
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div id="myaffix" class="catalog-container">
+        <div class="catalog" id="catalog">
+          <ul id="navRoot" class='nav nav-root' style="display:block;"></ul>
+        </div>
+      </div>
+
+      <div id="docRoot">
+        <!--Overview Start-->
+<h1 id="overview">Overview</h1>
+<p>ArcGIS WebApp Builder is built with <a href="https://developers.arcgis.com/en/javascript/">ArcGIS API for JavaScript</a> and <a href="http://www.dojotoolkit.org">Dojo</a>. It allows you to customize and extend functionalities by creating your own widgets and themes.</p>
+<h2 id="understanding-widgets-panels-and-themes">Understanding widgets, panels and themes</h2>
+<h3 id="widget">Widget</h3>
+<p>An ArcGIS WebApp Builder widget is a set of text files that you can share, move, and deploy to an ArcGIS WebApp Builder application.  </p>
+<p><img alt="Widget structure" src="images/Widget-model.jpg?raw=true"></p>
+<p>A widget can be a single JavaScript file, which is an AMD module, or can be as complicated as an AMD package, such as a Dojo package. The above screen capture represents a widget that has a template, configuration file, style file, and internationalization support.</p>
+<p>Typically, a widget encapsulates a set of isolated and focused business logics in which users can conduct a task. A widget is not only visually interactive with the user, but can also connect to server side resources such as map services from ArcGIS Server or ArcGIS Online. </p>
+<p>An ArcGIS WebApp Builder widget must extend the <code>BaseWidget</code> class (BaseWidget.js). By extending the <code>BaseWidget</code> class, a new JavaScript class is recognized by the ArcGIS WebApp Builder&rsquo;s <code>WidgetManager</code> as a deployable widget. </p>
+<p>For more details, see the walkthrough for developing a widget.  </p>
+<h3 id="panel">Panel</h3>
+<p>A panel is a UI element that displays the widget’s content. Multiple widgets can display in one panel.</p>
+<p>By using panel, the widget developer does not have to deal with how the widget and its content (data) displays in the HTML viewer. However, the widget developer can choose to not utilize the provided panel (for more details, see the Widget Development section). For example, the Scalebar widget has its own unique UI.</p>
+<p>You can modify or create new panels to obtain new functionality, such as making the widget display movable by dragging, and so on.</p>
+<h3 id="theme">Theme</h3>
+<p>A theme defines the UI of the web app created by ArcGIS WebApp Builder. Themes define:</p>
+<ul>
+<li>How the widget displays via theme panels</li>
+<li>The color scheme, fonts, and so on via styles</li>
+<li>Where widgets are located on the viewer’s UI, via one or more configuration files</li>
+</ul>
+<h2 id="skill-and-software-needed-for-arcgis-webapp-builder-developers">Skill and software needed for ArcGIS WebApp Builder developers</h2>
+<p>Developers need sufficient knowledge and experience using HTML and JavaScript to develop web applications.</p>
+<p><a href="http://www.dojotoolkit.org">Dojo</a> is the base platform for [ArcGIS API for JavaScript] (https://developers.arcgis.com/en/javascript/) and ArcGIS WebApp Builder. </p>
+<p>To develop a widget for ArcGIS WebApp Builder, a level of familiarity with the ArcGIS JavaScript API is recommended, or at least familiarity with the samples provided by Esri.</p>
+<p>Although the required software is a basic text editor, a standards-compliant web browser, and an Internet connection, the following are recommended for efficient development:</p>
+<ul>
+<li>Sublime or Aptana Studio IDE</li>
+<li>Chrome (latest version)</li>
+<li>Firefox (latest version) with the Firebug plug-in</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="http://help.arcgis.com/en/webapi/javascript/arcgis/index.html">ArcGIS API for JavaScript</a></li>
+<li><a href="http://blogs.esri.com/esri/arcgis/">ArcGIS Blogs</a></li>
+<li><a href="http://twitter.com/esri">twitter@esri</a></li>
+</ul>
+<h1 id="widget-development">Widget development</h1>
+<p>To develop a widget, create a new  <code>BaseWidget</code> subclass in the widget folder. The following demonstrates how to create a custom widget from scratch. The screen captures shown below are from Sublime text in which the ArcGIS WebApp Builder directory opens.</p>
+<p>All of the code for demo widgets are in the stemapp/widgets/samplewidgets/Demo folder. You can view demo widgets through http://<strong>your host</strong>/webapp/?config=sample-configs/config-demo.json.</p>
+<h2 id="widget-naming-convention">Widget naming convention</h2>
+<p>Although a widget’s resources can be named differently, the following are recommended:</p>
+<ul>
+<li><strong>Widget class</strong>- Uses the convention name, <code>Widget.js</code>.</li>
+<li><strong>Widget template (widget UI)</strong>- Use the same name as the widget class except with a .html extension. For example, <code>Widget.html</code>.</li>
+<li><strong>Widget Configuration File</strong>- Use the <code>config.json</code> file and put it into the widget folder.</li>
+<li><strong>Widget I18N File (locale file)</strong>- Use the <code>strings.js</code> file and put it into the nls folder. For more information, see Dojo’s documentation at <a href="http://dojotoolkit.org/documentation/tutorials/1.8/i18n/">http://dojotoolkit.org/documentation/tutorials/1.8/i18n/</a>.</li>
+<li><strong>Widget style file</strong>- Use the <code>style.css</code> file and put it into the css folder. Put all of the images used by the style into the css subfolder, called images.</li>
+<li><strong>Widget icon files</strong>- Use the <code>icon.png</code> file name and put it into the images folder.</li>
+<li><strong>Widget manifest file</strong>- Use the name <code>manifest.json</code> to describe the widget&rsquo;s content.</li>
+</ul>
+<h2 id="does-your-widget-need-a-panel">Does your widget need a panel?</h2>
+<p>For more information on what a panel is, see the <a href="#theme-development">Theme Development</a> section for more details.</p>
+<p>Two types of widgets are supported. One is a widget without a panel (such as Scalebar widget, Overview widget, and so on) and another is an<strong>in panel</strong> widget. Therefore, you make a decision, before coding, about whether your widget needs a panel or not. There are some differences between them:    </p>
+<ul>
+<li>Widget without a panel is not allowed in a widget pool. It’s only available in preload widgets.</li>
+<li>If a widget is without a panel, the app container opens the widget when the app starts.</li>
+<li>If a widget is in a panel, the app container creates an action button identified by the widget icon. When the widget icon is clicked, the widget opens in the panel.</li>
+</ul>
+<p>You can set the <code>inPanel</code> property in the widget&rsquo;s <code>manifest.json</code>. For more details, see <a href="#Package-your-widget">Package your widget</a>.</p>
+<h2 id="create-the-files-for-the-widget">Create the files for the widget</h2>
+<p>A widget at a minimum requires one file, the JavaScript file that defines it. However, for a more full-featured widget, there are multiple files to define it, including the HTML template, i18n support, styles, and so on. All of these will be demonstrated.</p>
+<p>First, to keep your widget files, create a folder (samplewidgets/Demo). Next, create the following set of folders and files in the folder:</p>
+<p><img alt="demo widget folder" src="images/demo-wiget-folder.png?raw=true"></p>
+<ul>
+<li>The JavaScript file that defines the widget (Widget.js).</li>
+<li>Template file that defines the widget’s UI (Widget.html)</li>
+<li>The widget’s Configuration file (config.json).</li>
+<li>The widget’s i18n strings file (nls/strings.js).</li>
+<li>The widget’s style file (css/style.css).</li>
+</ul>
+<h2 id="extend-the-basewidget-class">Extend the BaseWidget class</h2>
+<p>JavaScript is not a classical language. It is a prototypical object oriented language. As such, to make most developers comfortable with developing widgets, the ArcGIS WebApp Builder uses Dojo’s functions to create and extend classes. The ArcGIS WebApp Builder defines the <code>BaseWidget</code> class from which you create the child class, <code>Widget</code>.</p>
+<p>Open Widget.js in a text editor. The basic code for extending <code>BaseWidget</code> is:</p>
+<pre class="codehilite"><code>define(['dojo/_base/declare', 'jimu/BaseWidget'],
+function(declare, BaseWidget) {
+  //To create a widget, you need to derive from BaseWidget.
+  return declare([BaseWidget], {
+    // DemoWidget code goes here 
+
+  });
+});</code></pre>
+
+
+<p>This code:</p>
+<ul>
+<li>Declares the <code>DemoWidget</code> class as a child class of <code>BaseWidget</code>.</li>
+</ul>
+<p>For more information, see <a href="http://dojotoolkit.org/documentation/tutorials/1.8/declare/">http://dojotoolkit.org/documentation/tutorials/1.8/declare/</a>.</p>
+<h2 id="set-the-required-properties">Set the required properties</h2>
+<p>The following properties are required by the programming model:</p>
+<ul>
+<li><strong>baseClass</strong>- The widget’s root element CSS class name. Use the name, jimu-widget-widgetname.</li>
+</ul>
+<p>The code looks like the following:</p>
+<pre class="codehilite"><code>define(['dojo/_base/declare', 'jimu/BaseWidget'],
+function(declare, BaseWidget) {
+  //To create a widget, you need to derive from BaseWidget.
+  return declare([BaseWidget], {
+    // DemoWidget code goes here 
+    baseClass: 'jimu-widget-demo'
+  });
+});</code></pre>
+
+
+<h2 id="define-the-widgets-template-ui">Define the widget’s template (UI)</h2>
+<p>ArcGIS WebApp Builder widgets have an HTML template. This template defines the widget’s UI.  </p>
+<p>Open the Widget.html file in a text editor. Replace it with this:</p>
+<pre class="codehilite"><code>&lt;div&gt;
+    &lt;div&gt;I am a demo widget.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+<p>At this point, test your widget. Open config-demo.json (in stemapp/sample-configs folder). Find widgetPool-&gt;widgets, and add a new widget element like this:</p>
+<pre class="codehilite"><code>{
+  &quot;label&quot;: &quot;demo&quot;,
+  &quot;uri&quot;: &quot;widgets/samplewidgets/Demo/Widget&quot;
+}</code></pre>
+
+
+<p>Start the ArcGIS WebApp Builder through <em>http://<strong>you host</strong>/webapp/?config=sample-configs/config-demo.json</em> ,and click the icon. The widget appears like the following:</p>
+<p><img alt="demo widget UI" src="images/demo-wiget-ui.png?raw=true"></p>
+<p><strong>Note</strong><br>
+By default, the widget&rsquo;s template does not support dijit in the template. If you need to use dijit in the template, add <code>dijit/_WidgetsInTemplateMixin</code> into your required list, and mixin this class into your widget. Meanwhile, ensure that you have required all of the dijits used in the template. For more information, see <a href="http://dojotoolkit.org/documentation/tutorials/1.9/templated/">Creating Template-based Widgets</a></p>
+<h2 id="make-it-configurable">Make it configurable</h2>
+<p>Currently, there are no configuration options for the Demo widget.</p>
+<p>To change that, open config.json in the widget folder in a text editor. Add some JSON-structured text so that you can pass the config to your widget:</p>
+<pre class="codehilite"><code>{
+    &quot;configText&quot;:&quot;abcdefg&quot;
+}</code></pre>
+
+
+<p>Alter the HTML template to use the config that you have read from your config file.</p>
+<pre class="codehilite"><code>&lt;div&gt;
+    &lt;div&gt;I am a demo widget.&lt;/div&gt;
+    &lt;div&gt;This is configurable.[${ config.configText}]&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+<p>Now, the Demo widget looks like the following:</p>
+<p><img alt="configured demo widget" src="images/demo-wiget-ui-configured.png?raw=true"></p>
+<p>The ${configData.configText} marker in the template is automatically substituted with the values in the config.json file.</p>
+<h2 id="add-i18n-support">Add i18n support</h2>
+<p>Currently, in the Demo widget, there are some hard-coded English language strings:</p>
+<ul>
+<li>I am a demo widget.</li>
+<li>This is configurable.</li>
+</ul>
+<p>To internationalize the UI, generally you should isolate these strings in a separate language-specific resource file and reference the strings by their identity. Dojo provides complete i18n support, which is sensitive to user settings in the browser. For example, if Chinese translation is defined, and a user visits your web application with their browser language code set to zh-cn, they should automatically get the Chinese UI. For more information, see <a href="http://dojotoolkit.org/documentation/tutorials/1.8/i18n/">http://dojotoolkit.org/documentation/tutorials/1.8/i18n/</a>.</p>
+<p>The first step is to abstract the user interface strings to the default resource file. The user determines the translation of these strings. </p>
+<p>Open the nls/strings.js file with a text editor. Add the following:</p>
+<pre class="codehilite"><code>define({
+    root:{
+        label1: &quot;I am a demo widget.”
+        label2: &quot;This is configurable.&quot;
+    },
+    &quot;zh-cn&quot;: true    
+});</code></pre>
+
+
+<p>Create a folder named zh-cn and create a strings.js file in it. The following is the content:</p>
+<pre class="codehilite"><code>define({
+    label1 : &quot;我是一个演示widget。&quot;,
+    label2 : &quot;这里可以配置。&quot;
+});</code></pre>
+
+
+<p>Apply the changes to the template by removing the hard-coded English language and replacing it with markers:</p>
+<pre class="codehilite"><code>&lt;div&gt;
+    &lt;div&gt;${nls.label1}.&lt;/div&gt;
+    &lt;div&gt;${nls.label2}.[${configData.configText}]&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+<p>Reload your ArcGIS WebApp Builder application. This time, add a URL parameter, <code>locale=zh-cn</code>, or you change the browser’s locale configuration to view the change. </p>
+<p><img alt="localized" src="images/demo-wiget-ui-localized.png?raw=true"></p>
+<p>To support specific languages, create folders under the nls/ folder, named by the language code (for example, en, fr, ru). Copy the strings.js file to that folder and update the content to reflect the language for that code.</p>
+<h2 id="make-it-user-friendly">Make it user friendly</h2>
+<p>On the HTML page, a CSS file is used to layout the page, making it user friendly. The recommended way is to use a separate style file to write the CSS rules. Put the widget CSS in the css/style.css file.</p>
+<p>Open the css/style.css file and add the following code:</p>
+<pre class="codehilite"><code>.jimu-widget-demo div:first-child{
+  color: red;
+}</code></pre>
+
+
+<p>Note that all of the selectors in the style.css file should contain the base CSS class to avoid name conflict.</p>
+<p>Open the viewer. The widget resembles the following:</p>
+<p><img alt="demo widget" src="images/demo-wiget-final.png?raw=true"></p>
+<h2 id="let-the-widget-fit-the-theme">Let the widget fit the theme</h2>
+<p>For more information about themes, see the <a href="#theme-development">Theme Development</a> session.<br>
+By default, all of the CSS rules you write are applied in all themes. If you want to apply some CSS rules for a specific theme or theme style, write your CSS rule like this:</p>
+<pre class="codehilite"><code>.themeName .styleName {your selector}{  
+}</code></pre>
+
+
+<h2 id="access-a-map">Access a map</h2>
+<p>The ArcGIS WebApp Builder is a map-centric application. It provides map property defined in the <code>BaseWidget</code> class to access the map. You can access the map property through <code>this.map</code>. . The widget’s map property is a type of <code>esri.Map</code> from ArcGIS JavaScript API, configured in the config.json file. You can access all the map features provided by ArcGIS JavaScript API. Code the widget just like writing a regular ArcGIS JavaScript application.</p>
+<p>When a widget is instantiated, the map passes into it. As a result, you can access a map property in the <code>postCreate</code> or <code>startup</code> methods.</p>
+<p>Modify the UI template and add a div tag to display the map id property:</p>
+<pre class="codehilite"><code>&lt;div&gt;
+    &lt;div&gt;${nls.label1}.&lt;/div&gt;
+    &lt;div&gt;${nls.label2}.[${configData.configText}]&lt;/div&gt;
+      &lt;div data-dojo-attach-point=&quot;mapIdNode&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+<p>Add JavaScript code to access map:</p>
+<pre class="codehilite"><code>startup: function(){
+  this.inherited(arguments);
+  this.mapIdNode.innerHTML = 'map id:' + this.map.id;
+}</code></pre>
+
+
+<h2 id="communication-to-the-app-container">Communication to the app container</h2>
+<p><strong>Response to the app container</strong></p>
+<p>The widget is a dojo dijit; therefore, when a widget is instantiated, it goes through the full life cycle of a dijit, such as <code>constructor</code>, <code>postCreate</code>, <code>startup</code> and so on. For more information, see  <a href="http://dojotoolkit.org/documentation/tutorials/1.9/understanding_widgetbase/">http://dojotoolkit.org/documentation/tutorials/1.9/understanding_widgetbase/</a></p>
+<p>In addition to the dojo dijit’s life cycle functions, the widget has other callback functions that you can use:</p>
+<p><code>onOpen</code>- Called each time the widget opens. When a widget is instantiated, this method is called after startup.</p>
+<p><code>onMaximized</code>- Called when the widget is maximized. This method may never be called in some panels that do not have a maximize/minimize state.</p>
+<p><code>onMinimized</code>- Called when the widget is minimized. This method may never be called in some panels that do not have a maximize/minimize state.</p>
+<p><code>onClose</code>- Called when the widget closes.</p>
+<p><code>onSignIn</code>- Called when a user signs in to the portal/AGOL.</p>
+<p><code>onSignOut</code>- Called when a user signs out from the portal/AGOL.</p>
+<p><code>onPositionChange</code>- Called when widget’s position (left, right, top, bottom, width, height) changes. The widget’s position may be changed when the user changes the layout in the builder.</p>
+<p><code>resize</code>- Called when the window resizes.</p>
+<h2 id="widget-properties">Widget properties</h2>
+<p>TThe following are additional properties to use in widgets:</p>
+<table>
+<tr>
+<th>Name </th>
+<th>Description </th>
+</tr>
+<tr>
+<td>id</td> 
+<td>The unique ID of the widget set in the config.json file or generated by the app container.</td>
+</tr>
+<tr>
+<td>label</td>  
+<td>Set in the config.json file</td>
+</tr>
+<tr>
+<td>icon</td>   
+<td>The widget’s icon URL</td>
+</tr>
+<tr>
+<td>config</td> 
+<td>The widget’s config object</td>
+</tr>
+<tr>
+<td>map</td>    
+<td>The map this widget works to</td>
+</tr>
+<tr>
+<td>appConfig</td>  
+<td>The app's main config.json file is stored here.</td>
+</tr>
+<tr>
+<td>folderUrl</td>  
+<td>The widget folder’s URL.</td>
+</tr>
+<tr>
+<td>state</td>  
+<td>The widget’s current state, that is, opened or closed.</td>
+</tr>
+<tr>
+<td>windowState</td>  
+<td>The widget’s current window state, that is, normal, maximized, or minimized.</td>
+</tr>
+</table>
+
+<h2 id="use-the-app-container-css-classes-and-dijits">Use the app container CSS classes and dijits</h2>
+<p>To implement a consistence UI style and make development work easier, the widget developer should use the CSS classes and dijits provided by the app container.</p>
+<p>You can view these components from http://<strong>you host</strong>/webapp/jimu.js/tests/test-dijit.html<em> and </em>http://<strong>you host</strong>/webapp/jimu.js/tests/test-css.html. Note that these CSS classes and dijits will be added and updated as the app container evolves.</p>
+<p>The CSS classes can be found in jimu.js/css/jimu.css.</p>
+<table> 
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>jimu-input</td> 
+<td>Styled input tag</td>
+</tr>
+<tr>
+<td>jimu-btn</td>   
+<td>Styled button using div</td>
+</tr>
+<tr>
+<td>Jimu-icon-btn</td>  
+<td>Button with an icon in the center</td>
+</tr>
+<tr>
+<td>Jimu-nav-bar</td>   
+<td>Group of icon buttons</td>
+</tr>
+<tr>
+<td>jimu-oe-row</td>    
+<td>Odd even row</td>
+</tr>
+</table>
+
+<pre class="codehilite"><code></code></pre>
+
+
+<p><br>
+The dijits: (can be found in jimu.js/dijit)</p>
+<table>
+<tr>
+<th>Name</th>   
+<th>Description</th>
+</tr>
+<tr>
+<td>CheckBox</td>   
+<td>N/A</td>
+</tr>
+<tr>
+<td>RadioBtn</td>   
+<td>N/A</td>
+</tr>
+<tr>
+<td>DrawBox</td>
+<td>N/A</td>    
+</tr>
+<tr>
+<td>ColorPicker</td>    
+<td>N/A</td>
+</tr>
+<tr>
+<td>Popup</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>ImageChooser</td>   
+<td>N/A</td>
+</tr>
+<tr>
+<td>TabContainer</td>   
+<td>N/A</td>
+</tr>
+<tr>
+<td>ExtentChooser</td> 
+<td>N/A</td>
+</tr>
+<tr>
+<td>Message</td> 
+<td>N/A</td>
+</tr><tr>
+<td>LayerFieldChooser</td> 
+<td>N/A</td>
+</tr><tr>
+<td>PopupConfig</td> 
+<td>N/A</td>
+</tr><tr>
+<td>SymbolChooser</td> 
+<td>N/A</td>
+</tr>
+</table>
+
+<h2 id="make-the-widget-responsive">Make the widget responsive</h2>
+<p>The jimu.js file does not only support a responsive UI layout but also provides functions for developers to develop responsive widgets. </p>
+<p>There are two ways to archive the responsive goal: CSS and layout dijit .</p>
+<p>The CSS classes can be found in jimu.js/css/jimu.css.</p>
+<table>
+<tr>
+<th>Name</th>   
+<th>Description</th>
+</tr>
+<tr>
+<td>jimu-r-row</td> 
+<td>One row of the layout</td>
+</tr>
+<tr>
+<td>col-1-2</td>    
+<td>The width is half of its parent</td>
+</tr>
+<tr>
+<td>col-1-3</td>    
+<td>The width is one third of its parent</td>
+</tr>
+<tr>
+<td>col-2-3</td>    
+<td>N/A</td>
+</tr>
+<tr>
+<td>col-1-4</td>    
+<td>N/A</td>
+</tr>
+<tr>
+<td>col-3-4</td>    
+<td>N/A</td>
+</tr>
+</table>
+
+<p><br>
+The dijits can be found in jimu.js/dijit</p>
+<table>
+<tr>
+<th>Name</th>   
+<th>Description</th>
+</tr>
+<tr>
+<td>TileLayoutContainer</td>    
+<td>N/A</td>
+</tr>
+</table>
+
+<p><br>    </p>
+<p>If both of them cannot meet your requirements, follow the responsive UI best practices.</p>
+<h2 id="communication-between-widgets">Communication between widgets</h2>
+<p>As the requirement of reading or sending data between widgets is common, the <code>BaseWidget</code> class supports this programming model.</p>
+<p>In the constructor of the <code>BaseWidget</code> class, it subscribes the <code>publishData</code>, <code>dataFetched</code>, and <code>noData</code> events. Meanwhile, the <code>BaseWidget</code> class provides the <code>publishData</code> and <code>fetchData</code> methods.</p>
+<p>If you want the widget to publish data, call the <code>publishData</code> method. If you want the widget to receive data from another widget, call the <code>fetchData</code> method, and write code to override the <code>onData</code> and <code>onNoData</code> methods to read data.</p>
+<h2 id="use-the-dojo-dijit-in-widget">Use the dojo dijit in widget</h2>
+<p>The widget is a dojo dijit, which derives from the BaseWidget dijit; therefore, you can use the existing dijit as normal. With performance considerations, don’t mixin the <code>_WidgetsInTemplateMixin</code> in the BaseWidget. If you need to use dijit in the widget’s UI template file, mixin this class and require all of the dijits that you use in the template file. For more information, see <a href="http://dojotoolkit.org/documentation/tutorials/1.9/templated/">Creating Template-based Widgets</a> for more information.</p>
+<h2 id="make-the-widget-configurable-in-the-builder">Make the widget configurable in the builder</h2>
+<p>If the widget is configurable, the user can change the widget’s behavior by editing the config.json file. For a better user experience, the widget should provide a config UI to config itself when it is configured in the builder.</p>
+<p>These are the conventions the widget should follow:</p>
+<ol>
+<li>Create a folder named setting to hold all of the setting related files.</li>
+<li>Create a Setting.js file in the setting folder to hold the config logic. This class should inherit from <code>BaseSetting</code> class. In this class, there is a config property that holds the widget config data.</li>
+<li>Also, this class should override two methods: <code>getConfig</code>, return the config data input by the user and <code>setConfig</code> to initialize the widget setting page depending on the widget config data.</li>
+<li>Create a Setting.html file in the setting folder to hold the config UI</li>
+<li>Create a strings.js file in the setting /nls folder if the config needs to support internalization.</li>
+<li>Create a style.css file in the setting /css folder to hold the css property.</li>
+</ol>
+<p>During development, you can use http://<strong>your host</strong>/webappbuilder/?appid=stemapp to directly access your widget.</p>
+<h2 id="package-your-widget">Package your widget</h2>
+<p>The widget is easily packaged and shared. As a result, all of the widget contents are placed in the widget folder with a description file named, manifest.json, which is a JSON object and contains following properties:</p>
+<table>
+<tr>
+<th>Attribute</th>  
+<th>Type</th>   
+<th>Description</th>    
+<th>Required</th>   
+<th>Default</th>
+</tr>
+<tr>
+<td>name</td> 
+<td>String</td> 
+<td>The name identifies the widget. The name should be the same as the folder name under the widgets folder.</td>  
+<td>Y</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>2D</td> 
+<td>Boolean</td>    
+<td>Determines if the widget supports 2D</td>   
+<td>N</td>  
+<td>True</td>
+</tr>
+<tr>
+<td>3D</td> 
+<td>Boolean</td>    
+<td>Determines if the widget supports 3D.</td>  
+<td>N</td>  
+<td>False</td>
+</tr>
+<tr>
+<td>platform</td>   
+<td>String</td> 
+<td>Should be HTML.</td>    
+<td>Y</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>version</td>    
+<td>String</td> 
+<td>The format is 0.0.1.</td>   
+<td>Y</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>author</td> 
+<td>String</td>
+<td>N/A</td>        
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>description</td>    
+<td>String</td> 
+<td>N/A</td>    
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>copyright</td>  
+<td>String</td>
+<td>N/A</td>
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>license</td>    
+<td>String</td> 
+<td>N/A</td>    
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>properties</td>  
+<td>Object</td> 
+<td>See the following Properties table.</td> 
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+</table>
+
+<p><br>
+Properties table for widgets:</p>
+<table>
+<tr>
+<th>Attribute</th>  
+<th>Type</th> 
+<th>Description</th>  
+<th>Required</th> 
+<th>Default</th>
+</tr>
+<tr>
+<td>inPanel</td> 
+<td>Boolean</td> 
+<td>The widget displays in a panel by default. The developer can change this behavior. If it's not in a panel, the widget displays directly.</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>hasLocale</td> 
+<td>Boolean</td> 
+<td>The framework loads the i18n files by convention.</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>hasStyle</td> 
+<td>Boolean</td> 
+<td>N/A</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>hasConfig</td> 
+<td>Boolean</td> 
+<td>N/A</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>hasUIFile</td> 
+<td>Boolean</td> 
+<td>N/A</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>hasSettingPage</td> 
+<td>Boolean</td> 
+<td>N/A</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>hasSettingUIFile</td> 
+<td>Boolean</td> 
+<td>N/A</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>hasSettingLocale</td> 
+<td>Boolean</td> 
+<td>N/A</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>hasSettingStyle</td> 
+<td>Boolean</td> 
+<td>N/A</td>  
+<td>N</td>  
+<td>true</td>
+</tr>
+<tr>
+<td>isController</td> 
+<td>Boolean</td> 
+<td>If the widget is a controller widget, set this property to true.</td>  
+<td>N</td>  
+<td>false</td>
+</tr>
+</table>
+
+<p><br>
+After this file is complete, can zip the widget and share the package to the widget repository.</p>
+<h1 id="theme-development">Theme development</h1>
+<h2 id="concepts">Concepts</h2>
+<p>A theme defines panels, styles, and layouts. One app can include more than one theme, but can only use one theme while running. </p>
+<p>A theme is a folder named as the theme name. It contains the following files:</p>
+<ul>
+<li>
+<p>Similar with a widget, a theme must have an icon file named icon.png, which is under the images folder.  </p>
+</li>
+<li>
+<p>A common.css file under the theme folder. It contains style content that is common for all styles.</p>
+</li>
+<li>
+<p>A theme can include multiple styles in the styles folder. Each style is a folder that named as the style name. Each style must have a style.css file. A style named default is necessary.</p>
+</li>
+<li>
+<p>A theme can include multiple panels in the panels folder. Each panel is a folder named as the panel name. Each panel must have a Panel.js file.</p>
+</li>
+<li>
+<p>• A theme can include multiple layouts in the layouts folder. Each layout is a folder named as the layout name. Each layout must have a config.json file and an icon.png file. A layout named default is necessary.</p>
+</li>
+<li>
+<p>A manifest.json file to describe the theme content. The followings are its properties:</p>
+</li>
+</ul>
+<table>
+<tr>
+<th>Attribute</th>  
+<th>Type</th> 
+<th>Description</th>  
+<th>Required</th> 
+<th>Default</th>
+</tr>
+<tr>
+<td>name</td> 
+<td>String</td> 
+<td>The theme’s identity. It must be the same as the theme folder name.</td>  
+<td>Y</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>label</td> 
+<td>String</td> 
+<td>The displayed text for the theme.</td>  
+<td>Y</td>  
+<td>Theme's name</td>
+</tr>
+<tr>
+<td>styles</td> 
+<td>[]</td> 
+<td>A list of theme styles. Each style has a name, description, and styleColor properties.</td>  
+<td>Y</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>panels</td> 
+<td>[]</td> 
+<td>A list of theme panels. Each panel has a name and description properties.</td>  
+<td>Y</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>layouts</td> 
+<td>[]</td> 
+<td>A list of theme layouts. Each layout has a name and description properties. A layout is a configuration template file, which contains some widget configurations but leaves the uri property empty.</td>  
+<td>Y</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>version</td>  
+<td>String</td> 
+<td>The version format is 0.0.1.</td> 
+<td>Y</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>author</td> 
+<td>String</td>
+<td>N/A</td>   
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>description</td>  
+<td>String</td> 
+<td>N/A</td> 
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>copyright</td>  
+<td>String</td>
+<td>N/A</td>
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+<td>license</td>  
+<td>String</td> 
+<td>N/A</td> 
+<td>N</td>  
+<td>N/A</td>
+</tr>
+<tr>
+</table>
+
+<p><br>
+ArcGIS WebApp Builder provides two out-of-box themes, FoldableTheme and TabTheme. You can develop custom themes if these themes do not meet your requirements.</p>
+<h2 id="create-a-demo-theme">Create a Demo theme</h2>
+<p>In the created Demo theme, there is one panel, two styles, and two layouts. The panel is called <code>SimpleBorderPanel</code>, and has a basic border. One style, called <code>default</code>, has red as a main color, and another called <code>black</code>, has black as a main color. One layout called <code>default</code>, places one widget on the left side, and is the other called <code>right</code>, places one widget on the right side.</p>
+<p>Notes:</p>
+<ul>
+<li>The source code of the Demo theme is placed under <code>stemapp/themes/DemoTheme</code> in our source code repository. You can try the Demo theme in the builder.</li>
+<li>If you create a custom theme, put your theme folder under the theme repository folder (<code>stemapp/themes</code> by default).</li>
+</ul>
+<h3 id="create-files-for-the-theme">Create files for the theme</h3>
+<p>As described above, to create a theme, you need to create some necessary files under the theme folder. Here is the file structure of the Demo theme:</p>
+<p><img alt="DemoTheme" src="images/demo-theme.png?raw=true"></p>
+<h3 id="edit-the-manifestjson">Edit the manifest.json</h3>
+<p>The manifest.json file describes the theme’s content, and the builder reads this file to get the theme’s content. Based on the specification described above, update the manifest.json file as follows:</p>
+<pre class="codehilite"><code>{
+  &quot;name&quot;: &quot;DemoTheme&quot;,
+  &quot;panels&quot;: [
+    {
+      &quot;name&quot;: &quot;SimpleBorderPanel&quot;,
+      &quot;description&quot;: &quot;This is a panel with a border&quot;
+    }
+  ],
+  &quot;styles&quot;: [
+    {
+      &quot;name&quot;: &quot;default&quot;,
+      &quot;description&quot;: &quot;this is default style&quot;,
+      &quot;styleColor&quot;: &quot;red&quot;
+    },
+    {
+      &quot;name&quot;: &quot;black&quot;,
+      &quot;description&quot;: &quot;this is black style&quot;,
+      &quot;styleColor&quot;: &quot;#000000&quot;
+    }
+  ],
+  &quot;layouts&quot;: [
+    {
+      &quot;name&quot;: &quot;default&quot;,
+      &quot;description&quot;: &quot;this is the left layout&quot;
+    },
+    {
+      &quot;name&quot;: &quot;right&quot;,
+      &quot;description&quot;: &quot;this is the right layout&quot;
+    }
+  ],
+  &quot;version&quot;: &quot;0.0.1&quot;,
+  &quot;author&quot;: &quot;Esri R&amp;D Center Beijing&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;copyright&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;http://www.apache.org/licenses/LICENSE-2.0&quot;
+}</code></pre>
+
+
+<h3 id="create-the-panel">Create the panel</h3>
+<p>A panel is a UI element that used to display the widget’s content. Multiple widgets can use the same panel. However, the widget does not display directly on the panel. It is put in the WidgetFrame, then the widget frame displays on the panel. One widget frame holds one widget, and one panel can contain more than one widget frame. The following image gives you a general picture about the relationships of the panel, widget frame, and widget.</p>
+<p><img alt="Panel" src="images/panel-structure.png">  </p>
+<p>Developing a panel is the hardest work for a custom theme. To create a panel, you need JavaScript, CSS, and HTML knowledge. It is also beneficial to understand the dojo’s layout knowledge.</p>
+<p>To create a panel, create a class that derives from <code>BaseWidgetPanel</code>. If the default widget frame meets your requirements, create a frame class that derives from <code>BaseWidgetFrame</code>.</p>
+<p>You can override some functions when you create your panel:</p>
+<ul>
+<li><code>createFrame</code>- This function returns the widget frame object.</li>
+<li><code>reloadWidget</code>- This function is called by the builder when the widget is modified.</li>
+</ul>
+<p>The meaning of the following functions is the same as widget:</p>
+<ul>
+<li><code>onOpen</code></li>
+<li><code>onClose</code></li>
+<li><code>onMaximize</code></li>
+<li><code>onMinimize</code></li>
+<li><code>onNormalize</code></li>
+</ul>
+<h4 id="create-simpleborderpanel">Create SimpleBorderPanel</h4>
+<p>Because the SimpleBorderPanel is very basic, extend the <code>BaseWidgetPanel</code> without adding any new features. See the following code:</p>
+<pre class="codehilite"><code>define(['dojo/_base/declare',
+  'jimu/BaseWidgetPanel'
+],
+function(declare, BaseWidgetPanel) {
+  return declare([BaseWidgetPanel], {
+    baseClass: 'jimu-widget-panel jimu-border-panel',
+  });
+});</code></pre>
+
+
+<p>For more information about panels, see <code>BaseWidgetPanel</code>.</p>
+<h3 id="create-the-styles">Create the styles</h3>
+<p>You need to write some style (CSS) files to make the theme more beautiful. In the style files, you can override the styles in <code>jimu.css</code>, and write the styles that your panel needs as well. Place the common styles (used by all of the styles) in the <code>common.css</code> file, and the specific styles in the corresponding <code>style.css</code> files.</p>
+<p>There should be a style named <code>default</code>, to use when the theme is selected in the builder.</p>
+<h4 id="edit-teh-default-style">Edit teh default style</h4>
+<p>Because the default style’s main color is red, use the following style:</p>
+<pre class="codehilite"><code>.jimu-border-panel{
+  border: 1px solid red;
+}</code></pre>
+
+
+<h4 id="edit-the-black-style">Edit the black style</h4>
+<pre class="codehilite"><code>.jimu-border-panel{
+  border: 1px solid black;
+}</code></pre>
+
+
+<h3 id="create-the-layouts">Create the layouts</h3>
+<p>A layout is a config template file, which contains some widget config properties but leaves the <code>uri</code> property empty. When the app’s layout is changed, the builder does the following:</p>
+<ul>
+<li>For preload widgets, use the panel and position properties in the new layout to replace the panel, and position properties in the old layout by order. If the widget count is not the same, ignore the rest.</li>
+<li>For a widget pool, replace the group’s panel property by order.</li>
+<li>For a map, replace the position property.</li>
+</ul>
+<p>There should be a layout named <code>default</code>. This layout is used when the theme is selected in the builder to create the app config object.</p>
+<h4 id="edit-default-layout">Edit default layout</h4>
+<pre class="codehilite"><code>{
+  &quot;preloadWidgets&quot;: {
+    &quot;panel&quot;: {
+      &quot;uri&quot;: &quot;themes/DemoTheme/panels/SimpleBorderPanel/Panel&quot;
+    },
+    &quot;widgets&quot;: [{
+      &quot;label&quot;: &quot;Scalebar&quot;,
+      &quot;uri&quot;: &quot;widgets/Scalebar/Widget&quot;,
+      &quot;position&quot;: {
+        &quot;left&quot;: 25,
+        &quot;bottom&quot;: 25
+      }
+    }, {
+      &quot;label&quot;: &quot;Coordinate&quot;,
+      &quot;uri&quot;: &quot;widgets/Coordinate/Widget&quot;,
+      &quot;inPanel&quot;: false,
+      &quot;position&quot;: {
+        &quot;left&quot;: 200,
+        &quot;bottom&quot;: 10
+      }
+    }, {
+      &quot;label&quot;: &quot;Select a basemap&quot;,
+      &quot;uri&quot;: &quot;widgets/BasemapGallery/Widget&quot;,
+      &quot;inPanel&quot;: true,
+      &quot;position&quot;: {
+        &quot;left&quot;: 45,
+        &quot;top&quot;: 5,
+        &quot;width&quot;: 430,
+        &quot;height&quot;: 520
+      }
+    }, {
+      &quot;position&quot;: {
+        &quot;left&quot;: 95,
+        &quot;top&quot;: 5,
+        &quot;width&quot;: 400,
+        &quot;height&quot;: 410
+      }
+    }]
+  },
+
+  &quot;map&quot;: {
+    &quot;position&quot;: {
+      &quot;left&quot;: 0,
+      &quot;top&quot;: 0,
+      &quot;right&quot;: 0,
+      &quot;bottom&quot;: 0
+    }
+  }
+}</code></pre>
+
+
+<h4 id="edit-right-layout">Edit right layout</h4>
+<pre class="codehilite"><code>{
+  &quot;preloadWidgets&quot;: {
+    &quot;panel&quot;: {
+      &quot;uri&quot;: &quot;themes/DemoTheme/panels/SimpleBorderPanel/Panel&quot;
+    },
+    &quot;widgets&quot;: [{
+      &quot;label&quot;: &quot;Scalebar&quot;,
+      &quot;uri&quot;: &quot;widgets/Scalebar/Widget&quot;,
+      &quot;position&quot;: {
+        &quot;left&quot;: 25,
+        &quot;bottom&quot;: 25
+      }
+    }, {
+      &quot;label&quot;: &quot;Coordinate&quot;,
+      &quot;uri&quot;: &quot;widgets/Coordinate/Widget&quot;,
+      &quot;inPanel&quot;: false,
+      &quot;position&quot;: {
+        &quot;left&quot;: 200,
+        &quot;bottom&quot;: 10
+      }
+    }, {
+      &quot;label&quot;: &quot;Select a basemap&quot;,
+      &quot;uri&quot;: &quot;widgets/BasemapGallery/Widget&quot;,
+      &quot;inPanel&quot;: true,
+      &quot;position&quot;: {
+        &quot;left&quot;: 45,
+        &quot;top&quot;: 5,
+        &quot;width&quot;: 430,
+        &quot;height&quot;: 520
+      }
+    }, {
+      &quot;position&quot;: {
+        &quot;right&quot;: 95,
+        &quot;top&quot;: 5,
+        &quot;width&quot;: 400,
+        &quot;height&quot;: 410
+      }
+    }]
+  }
+}</code></pre>
+
+
+<h3 id="try-the-demo-theme-in-the-builder">Try the Demo theme in the builder</h3>
+<p>Start the builder and create a new app. If no errors occur, the Demo theme shows in the Themes tab.</p>
+<ol>
+<li>Click the Demo theme.</li>
+<li>Click the Layout icon to switch layouts.</li>
+<li>Open the BasemapGallery widget.</li>
+<li>Click the style icon to switch styles.</li>
+</ol>
+<p>During development, use http://<strong>your host</strong>/webappbuilder/?appid=stemapp to access your theme directly.</p>
+﻿
+        </body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="bootstrap3/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/docs.js"></script>
+        </html>

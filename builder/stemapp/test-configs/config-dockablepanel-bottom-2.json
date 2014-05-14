@@ -1,0 +1,67 @@
+{
+  "theme": {
+    "name": "FoldableTheme"
+  },
+  "portalUrl": "http://www.arcgis.com",
+  "appId":"senJpIJA845L4FlP",
+  "title": "ArcGIS Web Application",
+  "subtitle": "with ArcGIS WebApp Builder",
+  "httpProxy": "/proxy.js",
+  "preloadWidgets": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/TitlePanel/Panel"
+    },
+    "widgets": [{
+      "uri": "widgets/HeaderController/Widget",
+      "positionRelativeTo": "browser",
+      "position": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "height": 40
+      }
+    }]
+  },
+
+  "map": {
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+
+    "itemId": "a5ec3b581de145d7a801dd3e62304394",
+
+    "mapOptions": {
+      "center": [-98, 40],
+      "scale": 16937199
+    }
+  },
+  "widgetPool": {
+    "groups": [{
+      "label": "g1",
+      "widgets": [{
+        "label": "Measurement",
+        "uri": "widgets/Measurement/Widget"
+      },{
+        "label": "Query",
+        "uri": "widgets/Query/Widget"
+      }],
+      "panel": {
+        "uri": "themes/FoldableTheme/panels/DockablePanel/Panel",
+        "positionRelativeTo": "map",
+        "position": {
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "height": 250
+        },
+        "options": {
+          "region": "bottom",
+          "resizeMap": false
+        }
+      }
+    }]
+  }
+}

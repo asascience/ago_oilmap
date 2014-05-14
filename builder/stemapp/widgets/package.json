@@ -1,0 +1,17 @@
+{
+	"name": "widgets",
+	"version": "1.0",
+	"main": "main",
+	"dependencies": {
+		"dojo": "",
+		"dijit": "",
+		"dojox": "",
+		"util": "",
+		"esri": "",
+		"esri3d": "",
+		"jimu": ""
+	},
+	"description": "widgets for ArcGIS Web Application",
+	"bugs": "",
+	"dojoBuild": "package.js"
+}
