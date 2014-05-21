@@ -64,6 +64,23 @@
 	display: block;
 	padding: 10px;
 }
+.widgetsubTitle{
+	position: absolute;
+	left: 0px;
+	padding-top: 13px;
+	width: 750px;
+	padding-left:600px;
+	line-height: 30px;
+	font-family: HelveticaNeue;
+	font-size: 14px;
+	overflow: hidden;
+	display: block;
+}
+.widgetspillName{
+	padding-left: 219px;
+	width: 400px;
+	padding-top: 13px;
+}
 
 .widgetBody {
 	position: absolute;
@@ -90,7 +107,7 @@
 
 .widgetCol {
 	position: relative;
-	width: 150px;
+	width: 125px;
 	height: 70px;
 	margin-top: 5px;
 	text-align:center;
@@ -238,6 +255,7 @@
 	background: url(../images/bg.png) repeat-x!important;
 	border: none!important;
 	box-shadow: none!important;
+	background-color: slategrey!important;
 }
 
 .dijitComboBox .dijitButtonNode {
@@ -265,6 +283,9 @@
 	border-color: transparent;
 	background-color: transparent;
 	height: 24px;
+}
+.claro .dijitPopup {
+	max-height: 200px;
 }
 
 .claro .dijitSelect, .claro .dijitTextBox {

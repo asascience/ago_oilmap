@@ -5,7 +5,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'HelveticaNeue';
 	src: url('fonts/helveticaneue.eot');
@@ -13,7 +12,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 .rounded {
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -64,7 +62,23 @@
 	display: block;
 	padding: 10px;
 }
-
+.widgetsubTitle{
+	position: absolute;
+	left: 0px;
+	padding-top: 12px;
+	width: 750px;
+	padding-left:625px;
+	line-height: 30px;
+	font-family: HelveticaNeue;
+	font-size: 12px;
+	overflow: hidden;
+	display: block;
+}
+.widgetspillName{
+	padding-left: 219px;
+	width: 380px;
+	padding-top: 12px;
+}
 .widgetBody {
 	position: absolute;
 	left: 0px;
@@ -90,7 +104,7 @@
 
 .widgetCol {
 	position: relative;
-	width: 150px;
+	width: 125px;
 	height: 70px;
 	margin-top: 5px;
 	text-align:center;
@@ -226,24 +240,28 @@
 
 .dijitTextBox {
 	height: 24px!important;
+	/*background-color: #ffffff;*/
 	border-color: transparent!important;
+	background: url(../images/bg.png) repeat-x;
 }
 
 .dijitInputInner {
 	color: #ffffff!important;
+	/*background-color: #ffffff!important;*/
 }
-
 .dijitTextBoxFocused .dijitInputContainer {
 	/*background: transparent!important;*/
 	background: url(../images/bg.png) repeat-x!important;
 	border: none!important;
 	box-shadow: none!important;
 }
-
 .dijitComboBox .dijitButtonNode {
 	background: transparent!important;
 }
-
+#widget_spillName > div:nth-child(1){
+	background-color: #465874;
+	border-radius: 8px;
+}
 .dijitComboBox .dijitArrowButtonInner {
 	border: none!important;
 	width: 24px!important;
@@ -254,25 +272,18 @@
 	width: 24px!important; 
 	height: 24px!important;
 }
-
-.claro .dijitTextBoxFocused {
-	background: transparent!important;
-	border: none!important;
-	box-shadow: none!important;
-}
-
 .claro .dijitSelect {
 	border-color: transparent;
 	background-color: transparent;
 	height: 24px;
 }
-
-.claro .dijitSelect, .claro .dijitTextBox {
-	background-color: transparent;
+.claro .dijitPopup {
+	max-height: 200px;
 }
 
 .claro .dijitSelect, .claro .dijitTextBox {
 	background: url(../images/bg.png) repeat-x;
+	/*background-color: transparent;*/
 }
 
 .claro .dijitSelect .dijitArrowButtonContainer {
@@ -293,7 +304,6 @@ font-size: 14px;
 }
 
 /* Horizontal Slider */
-
 .claro .dijitSliderBarContainerH {
 	position: relative;
 	z-index: 1;
@@ -308,6 +318,9 @@ font-size: 14px;
 	display: none;
 }
 
+.sizer {
+	width: 180px!important;
+}
 .claro .dijitSliderImageHandleH {
 	border: 0;
 	width: 18px;

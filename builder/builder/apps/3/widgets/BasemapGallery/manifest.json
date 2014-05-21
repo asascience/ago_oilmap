@@ -1,14 +1,13 @@
 {
-  "name": "OilSpill",
-  "inPanel": false,
+  "name": "BasemapGallery",
+  "label": "Basemap Gallery",
   "platform": "HTML",
   "version": "",
-  "author": "@SpatialAgent",
-  "description": "RPS ASA",
+  "author": "Esri R&D Center Beijing",
+  "description": "",
   "copyright": "",
   "license": "http://www.apache.org/licenses/LICENSE-2.0",
   "properties": {
-  	"inPanel": false,
-  	"hasUIFile": true
+    "hasLocale": false
   }
 }

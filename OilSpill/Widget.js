@@ -13,6 +13,8 @@ define([
    'dojo/on',
    'dojo/parser', 
    'dijit/form/DateTextBox',
+   'dijit/form/TimeTextBox',
+   'dijit/form/TextBox',
    'dijit/form/HorizontalSlider',
    'dijit/form/NumberSpinner',
    'dijit/form/NumberTextBox',
@@ -44,6 +46,8 @@ define([
    on, 
    parser,
    DateTextBox,
+   TimeTextBox,
+   TextBox,
    HorizontalSlider,
    NumberSpinner,
    NumberTextBox,
@@ -64,25 +68,15 @@ define([
    var clazz = declare([BaseWidget], {
 
       name : 'OilSpill',
-
       baseClass : 'jimu-widget-oilspill',
-      
       opLayers : null,
-      
       toolMode : false,
-      
       timeSliderProps : null,
-      
       totalHours : 0,
-      
       timeSlice : 1,
-      
       sliderH : null,
-      
       counter : 0,
-      
       playing : false,
-      
       timer: null,
         
       spillParams : {
@@ -106,7 +100,7 @@ define([
       graTrajectory: null,
         
       postCreate: function() {
-         console.log("postCreate");
+         //console.log("postCreate");
          this._createUI();
          this.graWinds = new GraphicsLayer({id: "Winds"});
          this.map.addLayer(this.graWinds);
@@ -120,7 +114,7 @@ define([
       },
 
       startup : function() {
-         console.log("startup");
+         //console.log("startup");
          this.inherited(arguments);
          this._processMapInfo(this.map.itemInfo);
       },
@@ -175,6 +169,7 @@ define([
          var darkColor = Color.fromString("#000000");
          var titleColor = Color.blendColors(bodyColor, darkColor, 0.3);
          
+         //Spill Widget Titles
          var wContainer = domConstruct.create('div', {
              class: 'widgetContainer rounded shadow'
          }, this.domNode);
@@ -183,6 +178,10 @@ define([
              class: 'widgetTitle',
              innerHTML: "Oil Spill Analysis"
          }, wContainer);
+         var wSubTitle = domConstruct.create('div', {
+             class: 'widgetsubTitle',
+             innerHTML: "Provided by RPS ASA"
+         }, wContainer);
          domStyle.set(wTitle, "backgroundColor", titleColor.toHex());
          var wBody = domConstruct.create('div', {
              class: 'widgetBody'
@@ -190,7 +189,17 @@ define([
          var wForm = domConstruct.create('div', {
              class: 'widgetForm'
          }, wBody);
-            
+         
+         //Spill Name text
+         var wSpillTitle = domConstruct.create('div', {
+              style: "background-color: slategrey!important"
+         }, wContainer);
+         var spillName = new TextBox({
+              value:"Scenario Name",
+              id: "spillName",
+              class: 'widgetspillName'
+          }, wSpillTitle );
+
          // SPILL DATE
          var colDate = domConstruct.create('div', {
             class: 'widgetCol break',
@@ -200,17 +209,39 @@ define([
             class: 'widgetColContent'
          }, colDate);
          var dt = new Date();
-         dt.setDate(dt.getDate() -7);
+         var maxD = new Date();
+         var minD = new Date();
+
+         minD.setDate(dt.getDate() -31);
+         maxD.setDate(dt.getDate() +2);
          var spillDt = new DateTextBox({
               value: this._toCalDate(dt),
               id: "spillDate",
-              style: "width:100px"
+              style: "width:100px",
+              constraints:{min:this._toCalDate(minD), max:this._toCalDate(maxD)}
           }, divDate );
+
+         // SPILL TIME
+         var colTime = domConstruct.create('div', {
+            class: 'widgetCol break',
+            innerHTML: "TIME (gmt)"
+         }, wForm);
+         var divTime = domConstruct.create('div', {
+            class: 'widgetColContent'
+         }, colTime);
+         //var dt = new Date();
+         //dt.setDate(dt.getDate() -7);
+         var spillDt = new TimeTextBox({
+              value:"T15:00:00",
+              id: "spillTime",
+              style: "width:100px;",
+
+          }, divTime );
             
          // DURATION
          var colDur = domConstruct.create('div', {
             class: 'widgetCol break',
-            innerHTML: "DURATION (HOURS)"
+            innerHTML: "DURATION (hrs)"
          }, wForm);
          var divDur = domConstruct.create('div', {
             class: 'widgetColContent'
@@ -220,7 +251,7 @@ define([
               smallDelta: 1,
               constraints: { min:1, max:48, places:0 },
               id: "spillDur",
-              style: "width:100px"
+              style: "width:65px"
           }, divDur );
             
          // OIL TYPE
@@ -239,7 +270,7 @@ define([
                { label: "Heavy Crude", value: "HEAVY%20CRUDE%20OIL" }
            ],
            id: "spillType",
-           style: "width:100px"
+           style: "width:105px"
          }, divOilType);
             
          // VOLUME
@@ -253,9 +284,9 @@ define([
          var spillVol = new NumberSpinner({
               value: 1000,
               smallDelta: 1,
-              constraints: { min:1, max:3000, places:0 },
+              constraints: { min:100, max:1000000, places:0 },
               id: "spillVol",
-              style: "width:100px"
+              style: "width:103px"
          }, divVol );
          
          // UNITS
@@ -449,7 +480,9 @@ define([
             this.map.graphics.add(gra);
             
             var pt = webMercatorUtils.webMercatorToGeographic(event.mapPoint);
-            var url = "http://map.asascience.com/agol_oilmap/RunModel.aspx?CaseName=OILSPILL_test_1&ClientKey=agol_key&ModelType=OILSPILL&WaterTemp=62.6F&Winds=390&Currents=765&EcopWinds=GFS_winds&EcopCurrents=HYCOM_global_Navy_currents&Duration=8&Location=WORLD"
+            var url = me.config.client_url;
+
+            url += "&CaseName=" + this.spillName;
             url += "&StartDate=" + this._toModelDate(this.spillParams.date);
             url += "&simLength=" + this.spillParams.duration;
             url += "&IncLat=" + pt.y;
@@ -501,7 +534,8 @@ define([
          var d = (dt.getDate()).toString();
          if (d.length == 1)
             d = "0" + d;
-         var dtStr  = y + m + d + "T12:00:00";
+
+         var dtStr  = y + m + d + registry.byId("spillTime").value;
          return dtStr;
       },
       
@@ -568,7 +602,7 @@ define([
                  var speed = gra.attributes.Speed;
                  if (speed <= 0.1)
                   speed = 0.1;
-                 var size = parseInt(15 * Math.round(speed*10) / 5);
+                 var size = parseInt(13 * Math.round(speed*10) / 5);
                  var dir = gra.attributes.Direction;
                  var pms = new PictureMarkerSymbol("widgets/OilSpill/images/current.png", size, size);
                  pms.setAngle(dir);

@@ -13,6 +13,8 @@ define([
    'dojo/on',
    'dojo/parser', 
    'dijit/form/DateTextBox',
+   'dijit/form/TimeTextBox',
+   'dijit/form/TextBox',
    'dijit/form/HorizontalSlider',
    'dijit/form/NumberSpinner',
    'dijit/form/NumberTextBox',
@@ -28,7 +30,10 @@ define([
    'esri/symbols/SimpleLineSymbol',
    'esri/symbols/PictureMarkerSymbol',
    'esri/tasks/query',
-   'esri/TimeExtent'
+   'esri/TimeExtent',
+   "esri/geometry/Point",
+   'dijit/Dialog',
+   'esri/InfoTemplate'
 ], function(
    BaseWidget, 
    declare, 
@@ -44,6 +49,8 @@ define([
    on, 
    parser,
    DateTextBox,
+   TimeTextBox,
+   TextBox,
    HorizontalSlider,
    NumberSpinner,
    NumberTextBox,
@@ -59,30 +66,23 @@ define([
    SimpleLineSymbol,
    PictureMarkerSymbol,
    Query,
-   TimeExtent
+   TimeExtent,
+   Point,
+   Dialog,
+   InfoTemplate
 ) {
    var clazz = declare([BaseWidget], {
 
       name : 'OilSpill',
-
       baseClass : 'jimu-widget-oilspill',
-      
       opLayers : null,
-      
       toolMode : false,
-      
       timeSliderProps : null,
-      
       totalHours : 0,
-      
       timeSlice : 1,
-      
       sliderH : null,
-      
       counter : 0,
-      
       playing : false,
-      
       timer: null,
         
       spillParams : {
@@ -106,7 +106,7 @@ define([
       graTrajectory: null,
         
       postCreate: function() {
-         console.log("postCreate");
+         //console.log("postCreate");
          this._createUI();
          this.graWinds = new GraphicsLayer({id: "Winds"});
          this.map.addLayer(this.graWinds);
@@ -120,9 +120,16 @@ define([
       },
 
       startup : function() {
-         console.log("startup");
+         esriConfig.defaults.io.timeout = 6000000;
          this.inherited(arguments);
          this._processMapInfo(this.map.itemInfo);
+         this.own(on(this.map, "mouse-move", lang.hitch(this, this.onMouseMove)));
+      },
+      onMouseMove: function(evt) {
+        
+        var point = new Point(evt.mapPoint.x, evt.mapPoint.y, this.map.spatialReference);
+        var normalizedPoint = point.normalize();
+        dom.byId("latlongText").innerHTML = "Lon: " +normalizedPoint.getLongitude().toFixed(4) + ":&nbsp;" + " Lat: " + normalizedPoint.getLatitude().toFixed(4);
       },
       
       _resetMapGraphics : function() {
@@ -173,8 +180,9 @@ define([
             
          var bodyColor = Color.fromString(this.config.color || "#ff0000");
          var darkColor = Color.fromString("#000000");
-         var titleColor = Color.blendColors(bodyColor, darkColor, 0.3);
+         var titleColor = Color.blendColors(bodyColor, darkColor, .3);
          
+         //Spill Widget Titles
          var wContainer = domConstruct.create('div', {
              class: 'widgetContainer rounded shadow'
          }, this.domNode);
@@ -183,6 +191,17 @@ define([
              class: 'widgetTitle',
              innerHTML: "Oil Spill Analysis"
          }, wContainer);
+         var wSubTitle = domConstruct.create('div', {
+             class: 'widgetsubTitle',
+             innerHTML: "Provided by RPS ASA"
+         }, wContainer);
+         //latlong
+         var latlongTitle = domConstruct.create('div', {
+             id: 'latlongText',
+             innerHTML: "",
+             style:'padding-left:430px;position: absolute;top:19px'
+         }, wContainer);
+
          domStyle.set(wTitle, "backgroundColor", titleColor.toHex());
          var wBody = domConstruct.create('div', {
              class: 'widgetBody'
@@ -190,7 +209,17 @@ define([
          var wForm = domConstruct.create('div', {
              class: 'widgetForm'
          }, wBody);
-            
+         
+         //Spill Name text
+         var wSpillTitle = domConstruct.create('div', {
+            id: "spillNameDiv"
+         }, wContainer);
+         var spillName = new TextBox({
+              value:"ScenarioName",
+              id: "spillName",
+            class: 'widgetspillName'
+          }, wSpillTitle );
+
          // SPILL DATE
          var colDate = domConstruct.create('div', {
             class: 'widgetCol break',
@@ -200,17 +229,39 @@ define([
             class: 'widgetColContent'
          }, colDate);
          var dt = new Date();
-         dt.setDate(dt.getDate() -7);
+         var maxD = new Date();
+         var minD = new Date();
+
+         minD.setDate(dt.getDate() -31);
+         maxD.setDate(dt.getDate() +2);
          var spillDt = new DateTextBox({
               value: this._toCalDate(dt),
               id: "spillDate",
-              style: "width:100px"
+              style: "width:100px",
+              constraints:{min:this._toCalDate(minD), max:this._toCalDate(maxD)}
           }, divDate );
+
+         // SPILL TIME
+         var colTime = domConstruct.create('div', {
+            class: 'widgetCol break',
+            innerHTML: "TIME (gmt)"
+         }, wForm);
+         var divTime = domConstruct.create('div', {
+            class: 'widgetColContent'
+         }, colTime);
+         //var dt = new Date();
+         //dt.setDate(dt.getDate() -7);
+         var spillDt = new TimeTextBox({
+              value:"T15:00:00",
+              id: "spillTime",
+              style: "width:100px;",
+
+          }, divTime );
             
          // DURATION
          var colDur = domConstruct.create('div', {
             class: 'widgetCol break',
-            innerHTML: "DURATION (HOURS)"
+            innerHTML: "DURATION (hrs)"
          }, wForm);
          var divDur = domConstruct.create('div', {
             class: 'widgetColContent'
@@ -220,7 +271,7 @@ define([
               smallDelta: 1,
               constraints: { min:1, max:48, places:0 },
               id: "spillDur",
-              style: "width:100px"
+              style: "width:65px"
           }, divDur );
             
          // OIL TYPE
@@ -239,7 +290,7 @@ define([
                { label: "Heavy Crude", value: "HEAVY%20CRUDE%20OIL" }
            ],
            id: "spillType",
-           style: "width:100px"
+           style: "width:105px"
          }, divOilType);
             
          // VOLUME
@@ -253,9 +304,9 @@ define([
          var spillVol = new NumberSpinner({
               value: 1000,
               smallDelta: 1,
-              constraints: { min:1, max:3000, places:0 },
+              constraints: { min:100, max:1000000, places:0 },
               id: "spillVol",
-              style: "width:100px"
+              style: "width:103px"
          }, divVol );
          
          // UNITS
@@ -320,10 +371,9 @@ define([
          var wProcessing = domConstruct.create('div', {
              id: 'divProcessing',
              class: 'widgetProcessing',
-             innerHTML: 'Analyzing Oil Spill Information <img src="widgets/OilSpill/images/loader.gif">'
+             innerHTML: 'Running Oil Spill Model <img src="widgets/OilSpill/images/loader.gif">'
          }, wBody);
-         
-      
+              
       },
       
       _createTimeSlider: function() {
@@ -374,9 +424,9 @@ define([
          if (value > this.totalHours) {
             value = 0;
          }
-         if (value > 0) {
-            var startT = this.timeSliderProps.startTime + (value-1)*60*60*1000;
-            var endT = startT + 59*60*1000;
+         //if (value > 0) {
+            var startT = this.timeSliderProps.startTime + (value)*60*60*1000;
+            var endT = startT + 1000;
             var sliceExt = new TimeExtent();
             sliceExt.startTime = new Date(startT);
             sliceExt.endTime = new Date(endT);
@@ -390,7 +440,7 @@ define([
                this._queryOilSpillFeatures(sliceExt, particleExt);
             }
             dom.byId("divDate").innerHTML  = new Date(endT);
-         }
+         //}
          this.counter = value;
       },
       
@@ -449,7 +499,9 @@ define([
             this.map.graphics.add(gra);
             
             var pt = webMercatorUtils.webMercatorToGeographic(event.mapPoint);
-            var url = "http://map.asascience.com/agol_oilmap/RunModel.aspx?CaseName=OILSPILL_test_1&ClientKey=agol_key&ModelType=OILSPILL&WaterTemp=62.6F&Winds=390&Currents=765&EcopWinds=GFS_winds&EcopCurrents=HYCOM_global_Navy_currents&Duration=8&Location=WORLD"
+            var url = this.config.client_url;
+
+            url += "&CaseName=" + registry.byId("spillName").value;
             url += "&StartDate=" + this._toModelDate(this.spillParams.date);
             url += "&simLength=" + this.spillParams.duration;
             url += "&IncLat=" + pt.y;
@@ -477,8 +529,17 @@ define([
       },
         
       requestFailed: function(error, io) {
-         console.log(dojoJson.toJson(error, true));
-         this.toggleControls(false);
+         //console.log(dojoJson.toJson(error, true));
+         //this.toggleControls();
+         var myDialog = new Dialog({
+            title: "Alert",
+            content: "An error occurred with the model.  Please try check the location and try again or contact the application Administrator.",
+            style: "width: 300px"
+         });
+         myDialog.show();
+         domStyle.set("divProcessing", "display", "none");
+         domStyle.set("divBottom", "display", "block");
+         domStyle.set("divTime", "display", "none");
       },
         
       _toCalDate: function(dt) {
@@ -492,6 +553,17 @@ define([
          var dtStr  = y + "-" + m + "-" + d;
          return dtStr;
       },
+
+      _toCalTime: function(dt) {
+         var h = (dt.getHours()).toString();
+         if (h.length == 1)
+            h = "0" + h;
+         var m = (dt.getMinutes()).toString();
+         if (m.length == 1)
+            m = "0" + m;
+         var dtStr  = "T"+h + ":" + m + ":00";
+         return dtStr;
+      },
       
       _toModelDate: function(dt) {
          var y = dt.getFullYear();
@@ -501,7 +573,8 @@ define([
          var d = (dt.getDate()).toString();
          if (d.length == 1)
             d = "0" + d;
-         var dtStr  = y + m + d + "T12:00:00";
+
+         var dtStr  = y + m + d + this._toCalTime(registry.byId("spillTime").value);
          return dtStr;
       },
       
@@ -573,8 +646,12 @@ define([
                  var pms = new PictureMarkerSymbol("widgets/OilSpill/images/current.png", size, size);
                  pms.setAngle(dir);
                  var oldGra = me._getFeature(me.graCurrents, "ncells", value);
+                 var infoTemplate = new InfoTemplate("Water Speed",
+                  "Speed:  "+ speed+"  m/s");
+                 gra.setInfoTemplate(infoTemplate);
                  if (oldGra) {
                     //repeat +=1;
+                    oldGra.setInfoTemplate(infoTemplate);
                     oldGra.setSymbol(pms);
                  } else {
                      gra.setSymbol(pms);
@@ -598,7 +675,12 @@ define([
                  var pms = new PictureMarkerSymbol("widgets/OilSpill/images/" + speed +".png", size, size);
                  pms.setAngle(dir);
                  var oldGra = me._getFeature(me.graWinds, "ncells", value);
+                 var infoTemplate = new InfoTemplate("Wind Speed",
+                  "Speed:  "+ speed+"  Knots");
+                 gra.setInfoTemplate(infoTemplate);
+
                  if (oldGra) {
+                    oldGra.setInfoTemplate(infoTemplate);
                     oldGra.setSymbol(pms);
                  } else {
                      gra.setSymbol(pms);
@@ -625,5 +707,4 @@ define([
    clazz.hasLocale = false;
    clazz.hasUIFile = true;
    return clazz;
-   
 }); 
