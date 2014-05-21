@@ -1,0 +1,13 @@
+{
+  "title": "Oil Spill",
+  "client_key": "ChevronShipping2014",
+  "client_url_gom": "http://map.asascience.com/agoloilmap1/RunModel.aspx?ClientKey=ChevronShipping2014&ModelType=OILSPILL&WaterTemp=62.6F&Winds=390&Currents=765&EcopWinds=GFS_winds&EcopCurrents=HYCOM_global_Navy_currents&Duration=8&Location=WORLD&group=a55cab7476ff42ee915021acb2b5cc9d",
+  "client_url": "http://map.asascience.com/agoloilmap1/RunModel.aspx?ClientKey=ChevronShipping2014&ModelType=OILSPILL&WaterTemp=62.6F&Winds=390&Currents=488&EcopWinds=GFS_winds&EcopCurrents=SANFRAN_currents&Duration=8&Location=WORLD&group=a55cab7476ff42ee915021acb2b5cc9d",
+  "color": "#48a8d0",
+  "lyrTrajectory": "Trajectory",
+  "lyrParticles": "Particles",
+  "lyrThickness": "Thickness",
+  "lyrCurrents": "Currents",
+  "lyrWinds": "Winds",
+  "colors": ["#56b800", "#61bd00", "#6bc200", "#79c900", "#83cf00", "#91d400", "#9fd900", "#aade00", "#bbe600", "#cbeb00", "#d8f000", "#e4f500", "#f6fa00", "#fff700", "#ffe500", "#ffd500", "#ffc800", "#ffb700", "#ffa600", "#ff9500", "#ff8400", "#ff7300", "#ff6200", "#ff5100", "#ff4000"]
+}

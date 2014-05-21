@@ -14,6 +14,25 @@
 					"height": 40
 				}
 			}, {
+        "label": "Coordinate",
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 200,
+          "bottom": 10
+        }
+      }, {
+      "label": "Select a basemap",
+      "uri": "widgets/BasemapGallery/Widget",
+      "inPanel": true,
+      "position": {
+        "left": 45,
+        "top": 5,
+        "width": 430,
+        "height": 410
+      }
+    }, {
+        "uri": "widgets/AttributeTable/Widget"
+      }, {
 				"uri": "widgets/Geocoder/Widget",
 				"position": {
 					"left": 45,
