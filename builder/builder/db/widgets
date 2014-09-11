@@ -1,444 +1,450 @@
-{"k":"0000000080","o":"0000000622","v":"001"}
-{"_id":62,"_uid":62,"_dt":1400689255823,"_s":"e489430fb52379f5e021103656085899"}
-{"name":"About","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the widget","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/About/","icon":"/widgetrepo/About/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\About","label":"About","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":62}}
-{"k":"0000000080","o":"0000000636","v":"001"}
-{"_id":63,"_uid":63,"_dt":1400689255824,"_s":"733b24df86134f27b83cc714b62ea13e"}
-{"name":"AttributeTable","label":"Attribute Table","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/AttributeTable/","icon":"/widgetrepo/AttributeTable/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\AttributeTable","support2D":true,"_id":{"$wrap":"$oid","v":63}}
-{"k":"0000000080","o":"0000000635","v":"001"}
-{"_id":64,"_uid":64,"_dt":1400689255825,"_s":"f82a4a1930faaafac2ee58c67e3192e4"}
-{"name":"BasemapGallery","label":"Basemap Gallery","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/BasemapGallery/","icon":"/widgetrepo/BasemapGallery/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\BasemapGallery","support2D":true,"_id":{"$wrap":"$oid","v":64}}
-{"k":"0000000080","o":"0000000672","v":"001"}
-{"_id":65,"_uid":65,"_dt":1400689255826,"_s":"535761990a38842da4d287043d42264c"}
-{"name":"Bookmark","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the bookmark widget which support 2D and 3D map","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Bookmark/","icon":"/widgetrepo/Bookmark/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Bookmark","label":"Bookmark","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":65}}
-{"k":"0000000080","o":"0000000604","v":"001"}
-{"_id":66,"_uid":66,"_dt":1400689255827,"_s":"9278c291eb242dd0249a02d3bcfbf91b"}
-{"name":"Chart","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Chart/","icon":"/widgetrepo/Chart/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Chart","label":"Chart","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":66}}
-{"k":"0000000080","o":"0000000614","v":"001"}
-{"_id":67,"_uid":67,"_dt":1400689255827,"_s":"ae64e6506af29940966aece232e4d7f3"}
-{"name":"Coordinate","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Coordinate/","icon":"/widgetrepo/Coordinate/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Coordinate","label":"Coordinate","support2D":true,"_id":{"$wrap":"$oid","v":67}}
-{"k":"0000000080","o":"0000000614","v":"001"}
-{"_id":68,"_uid":68,"_dt":1400689255827,"_s":"8b00b781e71e3e33b7a72a2e35f0edd2"}
-{"name":"Directions","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Directions/","icon":"/widgetrepo/Directions/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Directions","label":"Directions","support2D":true,"_id":{"$wrap":"$oid","v":68}}
-{"k":"0000000080","o":"0000000583","v":"001"}
-{"_id":69,"_uid":69,"_dt":1400689255829,"_s":"9a706fe461c54829184843dc85f20129"}
-{"name":"Draw","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Draw/","icon":"/widgetrepo/Draw/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Draw","label":"Draw","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":69}}
-{"k":"0000000080","o":"0000000583","v":"001"}
-{"_id":70,"_uid":70,"_dt":1400689255829,"_s":"41b0f764b7f88efa31934d1d07586b9d"}
-{"name":"Edit","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Edit/","icon":"/widgetrepo/Edit/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Edit","label":"Edit","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":70}}
-{"k":"0000000080","o":"0000000618","v":"001"}
-{"_id":71,"_uid":71,"_dt":1400689255830,"_s":"491be4e73b4e47409be66e4fefeeaa75"}
-{"name":"Footer","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasSettingPage":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Footer/","icon":"/widgetrepo/Footer/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Footer","label":"Footer","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":71}}
-{"k":"0000000080","o":"0000000606","v":"001"}
-{"_id":72,"_uid":72,"_dt":1400689255830,"_s":"5640fad5add28b35859df72520b53230"}
-{"name":"Geocoder","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Geocoder/","icon":"/widgetrepo/Geocoder/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geocoder","label":"Geocoder","support2D":true,"_id":{"$wrap":"$oid","v":72}}
-{"k":"0000000080","o":"0000000650","v":"001"}
-{"_id":73,"_uid":73,"_dt":1400689255831,"_s":"b207bdcee62eaae56c8f45971544639b"}
-{"name":"Geoprocessing","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Geoprocessing/","icon":"/widgetrepo/Geoprocessing/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geoprocessing","label":"Geoprocessing","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":73}}
-{"k":"0000000080","o":"0000000617","v":"001"}
-{"_id":74,"_uid":74,"_dt":1400689255831,"_s":"5ed3c8c1b8001253724de23b39d65014"}
-{"name":"Header","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Header/","icon":"/widgetrepo/Header/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Header","label":"Header","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":74}}
-{"k":"0000000080","o":"0000000666","v":"001"}
-{"_id":75,"_uid":75,"_dt":1400689255833,"_s":"33a9d08bd55f1d5c8e68e734d558d089"}
-{"name":"HeaderController","label":"Header Controller","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"isController":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/HeaderController/","icon":"/widgetrepo/HeaderController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HeaderController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":75}}
-{"k":"0000000080","o":"0000000662","v":"001"}
-{"_id":76,"_uid":76,"_dt":1400689255835,"_s":"d12cd30cd0c6bcf5d3874a1ee4eae0f7"}
-{"name":"HistogramTimeSlider","label":"Histogram Time Slider","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasUIFile":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HistogramTimeSlider/","icon":"/widgetrepo/HistogramTimeSlider/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HistogramTimeSlider","support2D":true,"_id":{"$wrap":"$oid","v":76}}
-{"k":"0000000080","o":"0000000617","v":"001"}
-{"_id":77,"_uid":77,"_dt":1400689255836,"_s":"8cb06ee47d937099de431fbf1f461e8f"}
-{"name":"HomeButton","label":"Home Button","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HomeButton/","icon":"/widgetrepo/HomeButton/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HomeButton","support2D":true,"_id":{"$wrap":"$oid","v":77}}
-{"k":"0000000080","o":"0000000614","v":"001"}
-{"_id":78,"_uid":78,"_dt":1400689255837,"_s":"7419ee96a3a0d0b2f811778dd1983423"}
-{"name":"LayerList","label":"Layer List","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/LayerList/","icon":"/widgetrepo/LayerList/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\LayerList","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":78}}
-{"k":"0000000080","o":"0000000594","v":"001"}
-{"_id":79,"_uid":79,"_dt":1400689255837,"_s":"8fed25a9c77497223339fd365cadbb26"}
-{"name":"Legend","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Legend/","icon":"/widgetrepo/Legend/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Legend","label":"Legend","support2D":true,"_id":{"$wrap":"$oid","v":79}}
-{"k":"0000000080","o":"0000000638","v":"001"}
-{"_id":80,"_uid":80,"_dt":1400689255837,"_s":"833165076a7dfba1d43880d647f791b3"}
-{"name":"MapCompare","label":"Map Compare","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":true,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MapCompare/","icon":"/widgetrepo/MapCompare/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MapCompare","support2D":false,"support3D":true,"_id":{"$wrap":"$oid","v":80}}
-{"k":"0000000080","o":"0000000620","v":"001"}
-{"_id":81,"_uid":81,"_dt":1400689255837,"_s":"60c0f722a979cc6c534c835036a86cc7"}
-{"name":"Measurement","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasStyle":false,"inPanel":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Measurement/","icon":"/widgetrepo/Measurement/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Measurement","label":"Measurement","support2D":true,"_id":{"$wrap":"$oid","v":81}}
-{"k":"0000000080","o":"0000000616","v":"001"}
-{"_id":82,"_uid":82,"_dt":1400689255844,"_s":"ea93eeb73ad72b45604ad16d9a4a18d9"}
-{"name":"MyLocation","label":"My Location","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MyLocation/","icon":"/widgetrepo/MyLocation/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MyLocation","support2D":true,"_id":{"$wrap":"$oid","v":82}}
-{"k":"0000000080","o":"0000000623","v":"001"}
-{"_id":83,"_uid":83,"_dt":1400689255845,"_s":"027afa383d64423ad4ca93a8cdcad84b"}
-{"name":"OverviewMap","label":"Overview Map","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":false,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OverviewMap/","icon":"/widgetrepo/OverviewMap/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OverviewMap","support2D":true,"_id":{"$wrap":"$oid","v":83}}
-{"k":"0000000080","o":"0000000562","v":"001"}
-{"_id":84,"_uid":84,"_dt":1400689255845,"_s":"4790e70775c3bb9b621025d74a05f3d3"}
-{"name":"Print","label":"Print","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"","url":"/widgetrepo/Print/","icon":"/widgetrepo/Print/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Print","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":84}}
-{"k":"0000000080","o":"0000000588","v":"001"}
-{"_id":85,"_uid":85,"_dt":1400689255846,"_s":"50d291de8eb91bdf0693113e5c565b42"}
-{"name":"Query","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Query/","icon":"/widgetrepo/Query/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Query","label":"Query","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":85}}
-{"k":"0000000080","o":"0000000606","v":"001"}
-{"_id":86,"_uid":86,"_dt":1400689255847,"_s":"471b8e89bdb485bc0d6e815047525ef3"}
-{"name":"Scalebar","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Scalebar/","icon":"/widgetrepo/Scalebar/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Scalebar","label":"Scalebar","support2D":true,"_id":{"$wrap":"$oid","v":86}}
-{"k":"0000000080","o":"0000000593","v":"001"}
-{"_id":87,"_uid":87,"_dt":1400689255847,"_s":"c14d9c98f79f1b9ce46bd8e9800f2631"}
-{"name":"Search","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Search/","icon":"/widgetrepo/Search/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Search","label":"Search","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":87}}
-{"k":"0000000080","o":"0000000689","v":"001"}
-{"_id":88,"_uid":88,"_dt":1400689255848,"_s":"10588375ad5aef286b3ddd14f350881f"}
-{"name":"SidebarController","label":"Sidebar Controller","inPanel":false,"platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"isController":true,"hasConfig":false,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/SidebarController/","icon":"/widgetrepo/SidebarController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\SidebarController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":88}}
-{"k":"0000000080","o":"0000000617","v":"001"}
-{"_id":89,"_uid":89,"_dt":1400689255848,"_s":"28619797b77d42db95db37340ebe493c"}
-{"name":"Splash","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Splash/","icon":"/widgetrepo/Splash/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Splash","label":"Splash","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":89}}
-{"k":"0000000080","o":"0000000611","v":"001"}
-{"_id":90,"_uid":90,"_dt":1400689255848,"_s":"d4d495bb81bc037a20ce0398d5e8abd6"}
-{"name":"Track","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Track/","icon":"/widgetrepo/Track/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Track","label":"Track","support2D":false,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":90}}
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":62,"_uid":90,"_dt":1400700456434,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":63,"_uid":90,"_dt":1400700456435,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":64,"_uid":90,"_dt":1400700456435,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":65,"_uid":90,"_dt":1400700456436,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":66,"_uid":90,"_dt":1400700456436,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":67,"_uid":90,"_dt":1400700456436,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":68,"_uid":90,"_dt":1400700456437,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":69,"_uid":90,"_dt":1400700456437,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":70,"_uid":90,"_dt":1400700456437,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":71,"_uid":90,"_dt":1400700456437,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":72,"_uid":90,"_dt":1400700456438,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":73,"_uid":90,"_dt":1400700456438,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":74,"_uid":90,"_dt":1400700456438,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":75,"_uid":90,"_dt":1400700456439,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":76,"_uid":90,"_dt":1400700456439,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":77,"_uid":90,"_dt":1400700456440,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":78,"_uid":90,"_dt":1400700456440,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":79,"_uid":90,"_dt":1400700456440,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":80,"_uid":90,"_dt":1400700456440,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":81,"_uid":90,"_dt":1400700456441,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":82,"_uid":90,"_dt":1400700456441,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":83,"_uid":90,"_dt":1400700456441,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":84,"_uid":90,"_dt":1400700456441,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":85,"_uid":90,"_dt":1400700456441,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":86,"_uid":90,"_dt":1400700456443,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":87,"_uid":90,"_dt":1400700456443,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":88,"_uid":90,"_dt":1400700456443,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":89,"_uid":90,"_dt":1400700456443,"_a":"del"}
-
-{"k":"0000000051","o":"0000000000","v":"001"}
-{"_id":90,"_uid":90,"_dt":1400700456443,"_a":"del"}
-
-{"k":"0000000080","o":"0000000622","v":"001"}
-{"_id":91,"_uid":91,"_dt":1400700456460,"_s":"35c922fa89eb4b2173ea5ba2cb0dda28"}
-{"name":"About","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the widget","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/About/","icon":"/widgetrepo/About/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\About","label":"About","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":91}}
-{"k":"0000000080","o":"0000000636","v":"001"}
-{"_id":92,"_uid":92,"_dt":1400700456460,"_s":"d0671011d137d0472766847e7a5eba5e"}
-{"name":"AttributeTable","label":"Attribute Table","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/AttributeTable/","icon":"/widgetrepo/AttributeTable/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\AttributeTable","support2D":true,"_id":{"$wrap":"$oid","v":92}}
-{"k":"0000000080","o":"0000000635","v":"001"}
-{"_id":93,"_uid":93,"_dt":1400700456460,"_s":"f5fc2e068c10767c6bccaa0f61a4f43c"}
-{"name":"BasemapGallery","label":"Basemap Gallery","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/BasemapGallery/","icon":"/widgetrepo/BasemapGallery/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\BasemapGallery","support2D":true,"_id":{"$wrap":"$oid","v":93}}
-{"k":"0000000080","o":"0000000672","v":"001"}
-{"_id":94,"_uid":94,"_dt":1400700456460,"_s":"3428fe8f2121b63a5428822bb8b83539"}
-{"name":"Bookmark","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the bookmark widget which support 2D and 3D map","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Bookmark/","icon":"/widgetrepo/Bookmark/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Bookmark","label":"Bookmark","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":94}}
-{"k":"0000000080","o":"0000000604","v":"001"}
-{"_id":95,"_uid":95,"_dt":1400700456461,"_s":"42ec7e842cc57f863091406750137454"}
-{"name":"Chart","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Chart/","icon":"/widgetrepo/Chart/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Chart","label":"Chart","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":95}}
-{"k":"0000000080","o":"0000000614","v":"001"}
-{"_id":96,"_uid":96,"_dt":1400700456461,"_s":"e8fe18019ed0ed20c9faccc3a6222b80"}
-{"name":"Coordinate","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Coordinate/","icon":"/widgetrepo/Coordinate/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Coordinate","label":"Coordinate","support2D":true,"_id":{"$wrap":"$oid","v":96}}
-{"k":"0000000080","o":"0000000614","v":"001"}
-{"_id":97,"_uid":97,"_dt":1400700456462,"_s":"e2859c7fcdd62f5914b68f42b2d0afc2"}
-{"name":"Directions","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Directions/","icon":"/widgetrepo/Directions/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Directions","label":"Directions","support2D":true,"_id":{"$wrap":"$oid","v":97}}
-{"k":"0000000080","o":"0000000583","v":"001"}
-{"_id":98,"_uid":98,"_dt":1400700456462,"_s":"89e619fc411bf070065d12c7986eb686"}
-{"name":"Draw","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Draw/","icon":"/widgetrepo/Draw/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Draw","label":"Draw","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":98}}
-{"k":"0000000080","o":"0000000583","v":"001"}
-{"_id":99,"_uid":99,"_dt":1400700456462,"_s":"2e073d66cd8ac382ba97224ae9bf20ce"}
-{"name":"Edit","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Edit/","icon":"/widgetrepo/Edit/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Edit","label":"Edit","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":99}}
-{"k":"0000000082","o":"0000000619","v":"001"}
-{"_id":100,"_uid":100,"_dt":1400700456462,"_s":"2d50801b3e658db541af60468a70afe0"}
-{"name":"Footer","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasSettingPage":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Footer/","icon":"/widgetrepo/Footer/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Footer","label":"Footer","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":100}}
-{"k":"0000000082","o":"0000000607","v":"001"}
-{"_id":101,"_uid":101,"_dt":1400700456462,"_s":"9de9f055285c90094b0b8a047bff5aed"}
-{"name":"Geocoder","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Geocoder/","icon":"/widgetrepo/Geocoder/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geocoder","label":"Geocoder","support2D":true,"_id":{"$wrap":"$oid","v":101}}
-{"k":"0000000082","o":"0000000651","v":"001"}
-{"_id":102,"_uid":102,"_dt":1400700456463,"_s":"9c65a781f3133a05e2912269505447cc"}
-{"name":"Geoprocessing","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Geoprocessing/","icon":"/widgetrepo/Geoprocessing/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geoprocessing","label":"Geoprocessing","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":102}}
-{"k":"0000000082","o":"0000000618","v":"001"}
-{"_id":103,"_uid":103,"_dt":1400700456463,"_s":"3256dc1386a33c450bac2bc1975534b5"}
-{"name":"Header","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Header/","icon":"/widgetrepo/Header/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Header","label":"Header","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":103}}
-{"k":"0000000082","o":"0000000667","v":"001"}
-{"_id":104,"_uid":104,"_dt":1400700456464,"_s":"ae11b7acc7cba6874db227ef4ea86236"}
-{"name":"HeaderController","label":"Header Controller","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"isController":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/HeaderController/","icon":"/widgetrepo/HeaderController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HeaderController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":104}}
-{"k":"0000000082","o":"0000000663","v":"001"}
-{"_id":105,"_uid":105,"_dt":1400700456464,"_s":"a22288b452045ba3d0fe335ee7960143"}
-{"name":"HistogramTimeSlider","label":"Histogram Time Slider","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasUIFile":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HistogramTimeSlider/","icon":"/widgetrepo/HistogramTimeSlider/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HistogramTimeSlider","support2D":true,"_id":{"$wrap":"$oid","v":105}}
-{"k":"0000000082","o":"0000000618","v":"001"}
-{"_id":106,"_uid":106,"_dt":1400700456465,"_s":"0ccc590e93ddbbdb0202d1169e116a50"}
-{"name":"HomeButton","label":"Home Button","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HomeButton/","icon":"/widgetrepo/HomeButton/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HomeButton","support2D":true,"_id":{"$wrap":"$oid","v":106}}
+{"k":"0000000082","o":"0000000623","v":"001"}
+{"_id":421,"_uid":421,"_dt":1410376066657,"_s":"7a7505af4f611c1e53b62dfc41199ff3"}
+{"name":"About","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the widget","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/About/","icon":"/widgetrepo/About/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\About","label":"About","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":421}}
+{"k":"0000000082","o":"0000000637","v":"001"}
+{"_id":422,"_uid":422,"_dt":1410376066657,"_s":"e68b3b215b8f167c67b25b7481cdb60b"}
+{"name":"AttributeTable","label":"Attribute Table","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/AttributeTable/","icon":"/widgetrepo/AttributeTable/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\AttributeTable","support2D":true,"_id":{"$wrap":"$oid","v":422}}
+{"k":"0000000082","o":"0000000636","v":"001"}
+{"_id":423,"_uid":423,"_dt":1410376066658,"_s":"0ea1adb73634bc99159288c2d2d52c6c"}
+{"name":"BasemapGallery","label":"Basemap Gallery","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/BasemapGallery/","icon":"/widgetrepo/BasemapGallery/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\BasemapGallery","support2D":true,"_id":{"$wrap":"$oid","v":423}}
+{"k":"0000000082","o":"0000000673","v":"001"}
+{"_id":424,"_uid":424,"_dt":1410376066658,"_s":"8dd93f6ec80a9ad712281664c92e1739"}
+{"name":"Bookmark","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the bookmark widget which support 2D and 3D map","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Bookmark/","icon":"/widgetrepo/Bookmark/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Bookmark","label":"Bookmark","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":424}}
+{"k":"0000000082","o":"0000000605","v":"001"}
+{"_id":425,"_uid":425,"_dt":1410376066658,"_s":"f3f8e07fa21d411f1fba4c102ec6f61f"}
+{"name":"Chart","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Chart/","icon":"/widgetrepo/Chart/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Chart","label":"Chart","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":425}}
 {"k":"0000000082","o":"0000000615","v":"001"}
-{"_id":107,"_uid":107,"_dt":1400700456465,"_s":"1ce4884110f51710ad81e4451d1f2017"}
-{"name":"LayerList","label":"Layer List","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/LayerList/","icon":"/widgetrepo/LayerList/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\LayerList","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":107}}
-{"k":"0000000082","o":"0000000595","v":"001"}
-{"_id":108,"_uid":108,"_dt":1400700456465,"_s":"e584b98bd78c36b5e5f4594cbeb0cc81"}
-{"name":"Legend","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Legend/","icon":"/widgetrepo/Legend/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Legend","label":"Legend","support2D":true,"_id":{"$wrap":"$oid","v":108}}
-{"k":"0000000082","o":"0000000639","v":"001"}
-{"_id":109,"_uid":109,"_dt":1400700456466,"_s":"532aa770db6fd2d3579ddc562534df9f"}
-{"name":"MapCompare","label":"Map Compare","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":true,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MapCompare/","icon":"/widgetrepo/MapCompare/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MapCompare","support2D":false,"support3D":true,"_id":{"$wrap":"$oid","v":109}}
-{"k":"0000000082","o":"0000000621","v":"001"}
-{"_id":110,"_uid":110,"_dt":1400700456466,"_s":"c7fe7e751bd11be02b5a5d2add19d70f"}
-{"name":"Measurement","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasStyle":false,"inPanel":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Measurement/","icon":"/widgetrepo/Measurement/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Measurement","label":"Measurement","support2D":true,"_id":{"$wrap":"$oid","v":110}}
-{"k":"0000000082","o":"0000000617","v":"001"}
-{"_id":111,"_uid":111,"_dt":1400700456467,"_s":"d9663598ea2f38b60001a685d5e1a3bf"}
-{"name":"MyLocation","label":"My Location","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MyLocation/","icon":"/widgetrepo/MyLocation/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MyLocation","support2D":true,"_id":{"$wrap":"$oid","v":111}}
-{"k":"0000000082","o":"0000000618","v":"001"}
-{"_id":112,"_uid":112,"_dt":1400700456467,"_s":"b4402e9e391bfc378962dcf6ee412879"}
-{"name":"OilSpill","inPanel":false,"platform":"HTML","version":"","author":"@SpatialAgent","description":"RPS ASA","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OilSpill/","icon":"/widgetrepo/OilSpill/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OilSpill","label":"OilSpill","support2D":true,"_id":{"$wrap":"$oid","v":112}}
-{"k":"0000000082","o":"0000000624","v":"001"}
-{"_id":113,"_uid":113,"_dt":1400700456468,"_s":"0db1d9a16071513564038103d9e5adc1"}
-{"name":"OverviewMap","label":"Overview Map","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":false,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OverviewMap/","icon":"/widgetrepo/OverviewMap/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OverviewMap","support2D":true,"_id":{"$wrap":"$oid","v":113}}
-{"k":"0000000082","o":"0000000563","v":"001"}
-{"_id":114,"_uid":114,"_dt":1400700456469,"_s":"f54546d1594819dd1770824d62d1947b"}
-{"name":"Print","label":"Print","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"","url":"/widgetrepo/Print/","icon":"/widgetrepo/Print/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Print","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":114}}
-{"k":"0000000082","o":"0000000589","v":"001"}
-{"_id":115,"_uid":115,"_dt":1400700456469,"_s":"80ef07102aea1dde31eebd7b20aff78f"}
-{"name":"Query","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Query/","icon":"/widgetrepo/Query/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Query","label":"Query","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":115}}
+{"_id":426,"_uid":426,"_dt":1410376066659,"_s":"1fba63bafc4bc4c6c591485df93ea8e6"}
+{"name":"Coordinate","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Coordinate/","icon":"/widgetrepo/Coordinate/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Coordinate","label":"Coordinate","support2D":true,"_id":{"$wrap":"$oid","v":426}}
+{"k":"0000000082","o":"0000000615","v":"001"}
+{"_id":427,"_uid":427,"_dt":1410376066659,"_s":"a0db0c2a770382d22e51bdd06dc40f58"}
+{"name":"Directions","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Directions/","icon":"/widgetrepo/Directions/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Directions","label":"Directions","support2D":true,"_id":{"$wrap":"$oid","v":427}}
+{"k":"0000000082","o":"0000000584","v":"001"}
+{"_id":428,"_uid":428,"_dt":1410376066659,"_s":"15bd6e2412b49643fdf5949662de32a3"}
+{"name":"Draw","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Draw/","icon":"/widgetrepo/Draw/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Draw","label":"Draw","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":428}}
+{"k":"0000000082","o":"0000000584","v":"001"}
+{"_id":429,"_uid":429,"_dt":1410376066659,"_s":"3da4846807dcb763218f944396ec2884"}
+{"name":"Edit","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Edit/","icon":"/widgetrepo/Edit/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Edit","label":"Edit","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":429}}
+{"k":"0000000082","o":"0000000619","v":"001"}
+{"_id":430,"_uid":430,"_dt":1410376066659,"_s":"69f9cf0951a3b52a0b55b2d0079eb49f"}
+{"name":"Footer","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasSettingPage":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Footer/","icon":"/widgetrepo/Footer/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Footer","label":"Footer","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":430}}
 {"k":"0000000082","o":"0000000607","v":"001"}
-{"_id":116,"_uid":116,"_dt":1400700456469,"_s":"142c61f7a068e3a6eb6e16a773d8685c"}
-{"name":"Scalebar","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Scalebar/","icon":"/widgetrepo/Scalebar/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Scalebar","label":"Scalebar","support2D":true,"_id":{"$wrap":"$oid","v":116}}
-{"k":"0000000082","o":"0000000594","v":"001"}
-{"_id":117,"_uid":117,"_dt":1400700456469,"_s":"24a2e1ec4ed313db37dbd56848e57dd0"}
-{"name":"Search","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Search/","icon":"/widgetrepo/Search/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Search","label":"Search","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":117}}
-{"k":"0000000082","o":"0000000690","v":"001"}
-{"_id":118,"_uid":118,"_dt":1400700456469,"_s":"e644a95e8e55e4033e07f9d2d1dfead2"}
-{"name":"SidebarController","label":"Sidebar Controller","inPanel":false,"platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"isController":true,"hasConfig":false,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/SidebarController/","icon":"/widgetrepo/SidebarController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\SidebarController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":118}}
+{"_id":431,"_uid":431,"_dt":1410376066660,"_s":"0b0e90f32df6efe9813f4b7f38aca6c3"}
+{"name":"Geocoder","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Geocoder/","icon":"/widgetrepo/Geocoder/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geocoder","label":"Geocoder","support2D":true,"_id":{"$wrap":"$oid","v":431}}
+{"k":"0000000082","o":"0000000651","v":"001"}
+{"_id":432,"_uid":432,"_dt":1410376066661,"_s":"7e7bf57b49e3823e1437aca5077074b5"}
+{"name":"Geoprocessing","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Geoprocessing/","icon":"/widgetrepo/Geoprocessing/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geoprocessing","label":"Geoprocessing","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":432}}
 {"k":"0000000082","o":"0000000618","v":"001"}
-{"_id":119,"_uid":119,"_dt":1400700456470,"_s":"1dac6165649471fa476a5bff4fa3a945"}
-{"name":"Splash","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Splash/","icon":"/widgetrepo/Splash/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Splash","label":"Splash","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":119}}
+{"_id":433,"_uid":433,"_dt":1410376066661,"_s":"394089a106e3f17119a9e3121a27e9e4"}
+{"name":"Header","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Header/","icon":"/widgetrepo/Header/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Header","label":"Header","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":433}}
+{"k":"0000000082","o":"0000000667","v":"001"}
+{"_id":434,"_uid":434,"_dt":1410376066661,"_s":"75cefe3ae1bb0addbf69a3ff0fdf853d"}
+{"name":"HeaderController","label":"Header Controller","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"isController":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/HeaderController/","icon":"/widgetrepo/HeaderController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HeaderController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":434}}
+{"k":"0000000082","o":"0000000663","v":"001"}
+{"_id":435,"_uid":435,"_dt":1410376066661,"_s":"5b362b0aa97c765278627e14a607f97e"}
+{"name":"HistogramTimeSlider","label":"Histogram Time Slider","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasUIFile":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HistogramTimeSlider/","icon":"/widgetrepo/HistogramTimeSlider/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HistogramTimeSlider","support2D":true,"_id":{"$wrap":"$oid","v":435}}
+{"k":"0000000082","o":"0000000618","v":"001"}
+{"_id":436,"_uid":436,"_dt":1410376066662,"_s":"04ab976a698a6766d795f5de638d3175"}
+{"name":"HomeButton","label":"Home Button","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HomeButton/","icon":"/widgetrepo/HomeButton/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HomeButton","support2D":true,"_id":{"$wrap":"$oid","v":436}}
+{"k":"0000000082","o":"0000000615","v":"001"}
+{"_id":437,"_uid":437,"_dt":1410376066662,"_s":"21c3a0d6812d4e9d8f885ffc29de78e1"}
+{"name":"LayerList","label":"Layer List","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/LayerList/","icon":"/widgetrepo/LayerList/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\LayerList","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":437}}
+{"k":"0000000082","o":"0000000595","v":"001"}
+{"_id":438,"_uid":438,"_dt":1410376066662,"_s":"2453d1bf427f00800031505c47a7b804"}
+{"name":"Legend","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Legend/","icon":"/widgetrepo/Legend/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Legend","label":"Legend","support2D":true,"_id":{"$wrap":"$oid","v":438}}
+{"k":"0000000082","o":"0000000639","v":"001"}
+{"_id":439,"_uid":439,"_dt":1410376066663,"_s":"a07745c6ffbd9d7b9b099b995769417b"}
+{"name":"MapCompare","label":"Map Compare","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":true,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MapCompare/","icon":"/widgetrepo/MapCompare/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MapCompare","support2D":false,"support3D":true,"_id":{"$wrap":"$oid","v":439}}
+{"k":"0000000082","o":"0000000621","v":"001"}
+{"_id":440,"_uid":440,"_dt":1410376066664,"_s":"212110d2db3f9c5e9bf4b0e54a6a0780"}
+{"name":"Measurement","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasStyle":false,"inPanel":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Measurement/","icon":"/widgetrepo/Measurement/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Measurement","label":"Measurement","support2D":true,"_id":{"$wrap":"$oid","v":440}}
+{"k":"0000000082","o":"0000000617","v":"001"}
+{"_id":441,"_uid":441,"_dt":1410376066664,"_s":"62df9a5bf1a6bafe9881ea36d8c3b56a"}
+{"name":"MyLocation","label":"My Location","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MyLocation/","icon":"/widgetrepo/MyLocation/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MyLocation","support2D":true,"_id":{"$wrap":"$oid","v":441}}
+{"k":"0000000082","o":"0000000618","v":"001"}
+{"_id":442,"_uid":442,"_dt":1410376066665,"_s":"0378716ca3f6bc4158e51d5e5bbe74c8"}
+{"name":"OilSpill","inPanel":false,"platform":"HTML","version":"","author":"@SpatialAgent","description":"RPS ASA","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OilSpill/","icon":"/widgetrepo/OilSpill/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OilSpill","label":"OilSpill","support2D":true,"_id":{"$wrap":"$oid","v":442}}
+{"k":"0000000082","o":"0000000624","v":"001"}
+{"_id":443,"_uid":443,"_dt":1410376066666,"_s":"642ada6a4179301331a7fe3951bb7bb8"}
+{"name":"OverviewMap","label":"Overview Map","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":false,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OverviewMap/","icon":"/widgetrepo/OverviewMap/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OverviewMap","support2D":true,"_id":{"$wrap":"$oid","v":443}}
+{"k":"0000000082","o":"0000000563","v":"001"}
+{"_id":444,"_uid":444,"_dt":1410376066666,"_s":"5362b174a168cb44e8de7919bf131b87"}
+{"name":"Print","label":"Print","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"","url":"/widgetrepo/Print/","icon":"/widgetrepo/Print/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Print","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":444}}
+{"k":"0000000082","o":"0000000589","v":"001"}
+{"_id":445,"_uid":445,"_dt":1410376066667,"_s":"eef977961a7ab4429ee26c4f3556da8e"}
+{"name":"Query","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Query/","icon":"/widgetrepo/Query/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Query","label":"Query","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":445}}
+{"k":"0000000082","o":"0000000607","v":"001"}
+{"_id":446,"_uid":446,"_dt":1410376066667,"_s":"1a9e790e376867d98f04cda3394c2ce1"}
+{"name":"Scalebar","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Scalebar/","icon":"/widgetrepo/Scalebar/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Scalebar","label":"Scalebar","support2D":true,"_id":{"$wrap":"$oid","v":446}}
+{"k":"0000000082","o":"0000000594","v":"001"}
+{"_id":447,"_uid":447,"_dt":1410376066667,"_s":"14a10f7bf0a9c3972c0858d4a73daa78"}
+{"name":"Search","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Search/","icon":"/widgetrepo/Search/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Search","label":"Search","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":447}}
+{"k":"0000000082","o":"0000000690","v":"001"}
+{"_id":448,"_uid":448,"_dt":1410376066668,"_s":"7dab6bf78051f8dd64246481cd77a281"}
+{"name":"SidebarController","label":"Sidebar Controller","inPanel":false,"platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"isController":true,"hasConfig":false,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/SidebarController/","icon":"/widgetrepo/SidebarController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\SidebarController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":448}}
+{"k":"0000000082","o":"0000000618","v":"001"}
+{"_id":449,"_uid":449,"_dt":1410376066668,"_s":"febe8b99c9d35175381a5419cb4703f7"}
+{"name":"Splash","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Splash/","icon":"/widgetrepo/Splash/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Splash","label":"Splash","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":449}}
 {"k":"0000000082","o":"0000000612","v":"001"}
-{"_id":120,"_uid":120,"_dt":1400700456470,"_s":"6aedb0522c4c1aa72123064a2cfebe35"}
-{"name":"Track","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Track/","icon":"/widgetrepo/Track/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Track","label":"Track","support2D":false,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":120}}
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":91,"_uid":120,"_dt":1400706717162,"_a":"del"}
-
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":92,"_uid":120,"_dt":1400706717163,"_a":"del"}
-
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":93,"_uid":120,"_dt":1400706717163,"_a":"del"}
-
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":94,"_uid":120,"_dt":1400706717164,"_a":"del"}
-
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":95,"_uid":120,"_dt":1400706717164,"_a":"del"}
-
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":96,"_uid":120,"_dt":1400706717165,"_a":"del"}
-
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":97,"_uid":120,"_dt":1400706717166,"_a":"del"}
-
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":98,"_uid":120,"_dt":1400706717166,"_a":"del"}
-
-{"k":"0000000052","o":"0000000000","v":"001"}
-{"_id":99,"_uid":120,"_dt":1400706717166,"_a":"del"}
+{"_id":450,"_uid":450,"_dt":1410376066668,"_s":"097d188f7f9c01b0820c40eb79227c2f"}
+{"name":"Track","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Track/","icon":"/widgetrepo/Track/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Track","label":"Track","support2D":false,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":450}}
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":421,"_uid":450,"_dt":1410377106775,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":100,"_uid":120,"_dt":1400706717167,"_a":"del"}
+{"_id":422,"_uid":450,"_dt":1410377106776,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":101,"_uid":120,"_dt":1400706717167,"_a":"del"}
+{"_id":423,"_uid":450,"_dt":1410377106776,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":102,"_uid":120,"_dt":1400706717167,"_a":"del"}
+{"_id":424,"_uid":450,"_dt":1410377106776,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":103,"_uid":120,"_dt":1400706717168,"_a":"del"}
+{"_id":425,"_uid":450,"_dt":1410377106777,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":104,"_uid":120,"_dt":1400706717169,"_a":"del"}
+{"_id":426,"_uid":450,"_dt":1410377106778,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":105,"_uid":120,"_dt":1400706717169,"_a":"del"}
+{"_id":427,"_uid":450,"_dt":1410377106778,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":106,"_uid":120,"_dt":1400706717170,"_a":"del"}
+{"_id":428,"_uid":450,"_dt":1410377106778,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":107,"_uid":120,"_dt":1400706717171,"_a":"del"}
+{"_id":429,"_uid":450,"_dt":1410377106778,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":108,"_uid":120,"_dt":1400706717171,"_a":"del"}
+{"_id":430,"_uid":450,"_dt":1410377106778,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":109,"_uid":120,"_dt":1400706717171,"_a":"del"}
+{"_id":431,"_uid":450,"_dt":1410377106778,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":110,"_uid":120,"_dt":1400706717172,"_a":"del"}
+{"_id":432,"_uid":450,"_dt":1410377106778,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":111,"_uid":120,"_dt":1400706717172,"_a":"del"}
+{"_id":433,"_uid":450,"_dt":1410377106779,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":112,"_uid":120,"_dt":1400706717173,"_a":"del"}
+{"_id":434,"_uid":450,"_dt":1410377106779,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":113,"_uid":120,"_dt":1400706717173,"_a":"del"}
+{"_id":435,"_uid":450,"_dt":1410377106780,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":114,"_uid":120,"_dt":1400706717174,"_a":"del"}
+{"_id":436,"_uid":450,"_dt":1410377106780,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":115,"_uid":120,"_dt":1400706717176,"_a":"del"}
+{"_id":437,"_uid":450,"_dt":1410377106781,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":116,"_uid":120,"_dt":1400706717176,"_a":"del"}
+{"_id":438,"_uid":450,"_dt":1410377106781,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":117,"_uid":120,"_dt":1400706717177,"_a":"del"}
+{"_id":439,"_uid":450,"_dt":1410377106781,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":118,"_uid":120,"_dt":1400706717177,"_a":"del"}
+{"_id":440,"_uid":450,"_dt":1410377106781,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":119,"_uid":120,"_dt":1400706717177,"_a":"del"}
+{"_id":441,"_uid":450,"_dt":1410377106781,"_a":"del"}
 
 {"k":"0000000053","o":"0000000000","v":"001"}
-{"_id":120,"_uid":120,"_dt":1400706717178,"_a":"del"}
+{"_id":442,"_uid":450,"_dt":1410377106781,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":443,"_uid":450,"_dt":1410377106782,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":444,"_uid":450,"_dt":1410377106782,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":445,"_uid":450,"_dt":1410377106783,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":446,"_uid":450,"_dt":1410377106783,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":447,"_uid":450,"_dt":1410377106784,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":448,"_uid":450,"_dt":1410377106784,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":449,"_uid":450,"_dt":1410377106784,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":450,"_uid":450,"_dt":1410377106785,"_a":"del"}
 
 {"k":"0000000082","o":"0000000623","v":"001"}
-{"_id":121,"_uid":121,"_dt":1400706717352,"_s":"804ab0beacc94ec322389af09686746c"}
-{"name":"About","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the widget","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/About/","icon":"/widgetrepo/About/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\About","label":"About","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":121}}
+{"_id":451,"_uid":451,"_dt":1410377106801,"_s":"9951916df2487dab37183dde2e522f9e"}
+{"name":"About","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the widget","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/About/","icon":"/widgetrepo/About/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\About","label":"About","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":451}}
 {"k":"0000000082","o":"0000000637","v":"001"}
-{"_id":122,"_uid":122,"_dt":1400706717353,"_s":"664649c1f4b1d1db05f820096b56c083"}
-{"name":"AttributeTable","label":"Attribute Table","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/AttributeTable/","icon":"/widgetrepo/AttributeTable/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\AttributeTable","support2D":true,"_id":{"$wrap":"$oid","v":122}}
+{"_id":452,"_uid":452,"_dt":1410377106802,"_s":"bf723504c6a5406bd2782292a6bcf35e"}
+{"name":"AttributeTable","label":"Attribute Table","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/AttributeTable/","icon":"/widgetrepo/AttributeTable/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\AttributeTable","support2D":true,"_id":{"$wrap":"$oid","v":452}}
 {"k":"0000000082","o":"0000000636","v":"001"}
-{"_id":123,"_uid":123,"_dt":1400706717354,"_s":"b4ff69d9c0bf59471dd7f09fdf6a26b6"}
-{"name":"BasemapGallery","label":"Basemap Gallery","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/BasemapGallery/","icon":"/widgetrepo/BasemapGallery/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\BasemapGallery","support2D":true,"_id":{"$wrap":"$oid","v":123}}
+{"_id":453,"_uid":453,"_dt":1410377106802,"_s":"9e0afbfb57821c1fab0d2012fcd8b1ee"}
+{"name":"BasemapGallery","label":"Basemap Gallery","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/BasemapGallery/","icon":"/widgetrepo/BasemapGallery/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\BasemapGallery","support2D":true,"_id":{"$wrap":"$oid","v":453}}
 {"k":"0000000082","o":"0000000673","v":"001"}
-{"_id":124,"_uid":124,"_dt":1400706717354,"_s":"0163f14414eaaf7325d6c139bbc72b66"}
-{"name":"Bookmark","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the bookmark widget which support 2D and 3D map","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Bookmark/","icon":"/widgetrepo/Bookmark/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Bookmark","label":"Bookmark","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":124}}
+{"_id":454,"_uid":454,"_dt":1410377106802,"_s":"f48ce43939ee42547176c6b14f1959f7"}
+{"name":"Bookmark","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the bookmark widget which support 2D and 3D map","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Bookmark/","icon":"/widgetrepo/Bookmark/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Bookmark","label":"Bookmark","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":454}}
 {"k":"0000000082","o":"0000000605","v":"001"}
-{"_id":125,"_uid":125,"_dt":1400706717355,"_s":"7bd3c73131f49dfb74807dff389bc7f8"}
-{"name":"Chart","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Chart/","icon":"/widgetrepo/Chart/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Chart","label":"Chart","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":125}}
+{"_id":455,"_uid":455,"_dt":1410377106803,"_s":"eeab1505b1a60588c40e13a6f41b02c6"}
+{"name":"Chart","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Chart/","icon":"/widgetrepo/Chart/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Chart","label":"Chart","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":455}}
 {"k":"0000000082","o":"0000000615","v":"001"}
-{"_id":126,"_uid":126,"_dt":1400706717356,"_s":"7127a9646c0be930d1a6560784c5fe83"}
-{"name":"Coordinate","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Coordinate/","icon":"/widgetrepo/Coordinate/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Coordinate","label":"Coordinate","support2D":true,"_id":{"$wrap":"$oid","v":126}}
+{"_id":456,"_uid":456,"_dt":1410377106803,"_s":"5828a5b6626f83190b5f66dbfda21733"}
+{"name":"Coordinate","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Coordinate/","icon":"/widgetrepo/Coordinate/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Coordinate","label":"Coordinate","support2D":true,"_id":{"$wrap":"$oid","v":456}}
 {"k":"0000000082","o":"0000000615","v":"001"}
-{"_id":127,"_uid":127,"_dt":1400706717357,"_s":"075e64e9c6571b0aff4e332a98e1ff4f"}
-{"name":"Directions","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Directions/","icon":"/widgetrepo/Directions/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Directions","label":"Directions","support2D":true,"_id":{"$wrap":"$oid","v":127}}
+{"_id":457,"_uid":457,"_dt":1410377106803,"_s":"bec0bb54d34557a83bf2f9e6778e5f18"}
+{"name":"Directions","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Directions/","icon":"/widgetrepo/Directions/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Directions","label":"Directions","support2D":true,"_id":{"$wrap":"$oid","v":457}}
 {"k":"0000000082","o":"0000000584","v":"001"}
-{"_id":128,"_uid":128,"_dt":1400706717357,"_s":"6efdbd095c51d92416b7209dd75d1196"}
-{"name":"Draw","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Draw/","icon":"/widgetrepo/Draw/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Draw","label":"Draw","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":128}}
+{"_id":458,"_uid":458,"_dt":1410377106803,"_s":"b8a497d493ee889a8a57feaf1d57ed6a"}
+{"name":"Draw","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Draw/","icon":"/widgetrepo/Draw/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Draw","label":"Draw","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":458}}
 {"k":"0000000082","o":"0000000584","v":"001"}
-{"_id":129,"_uid":129,"_dt":1400706717358,"_s":"33fe5cb2168844d371cf909fce9e8c0c"}
-{"name":"Edit","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Edit/","icon":"/widgetrepo/Edit/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Edit","label":"Edit","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":129}}
+{"_id":459,"_uid":459,"_dt":1410377106804,"_s":"3f6b66fe8fd32415b767751370e98d09"}
+{"name":"Edit","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Edit/","icon":"/widgetrepo/Edit/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Edit","label":"Edit","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":459}}
 {"k":"0000000082","o":"0000000619","v":"001"}
-{"_id":130,"_uid":130,"_dt":1400706717358,"_s":"60818e61370833b1449614c2052203ff"}
-{"name":"Footer","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasSettingPage":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Footer/","icon":"/widgetrepo/Footer/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Footer","label":"Footer","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":130}}
+{"_id":460,"_uid":460,"_dt":1410377106804,"_s":"c65692f5619ad34e2c861ffa7851a34a"}
+{"name":"Footer","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasSettingPage":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Footer/","icon":"/widgetrepo/Footer/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Footer","label":"Footer","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":460}}
 {"k":"0000000082","o":"0000000607","v":"001"}
-{"_id":131,"_uid":131,"_dt":1400706717359,"_s":"1859a6dc53cbab5075a772b2bd32103b"}
-{"name":"Geocoder","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Geocoder/","icon":"/widgetrepo/Geocoder/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geocoder","label":"Geocoder","support2D":true,"_id":{"$wrap":"$oid","v":131}}
+{"_id":461,"_uid":461,"_dt":1410377106804,"_s":"f95212b0459b217e8028e3b71b46e2b1"}
+{"name":"Geocoder","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Geocoder/","icon":"/widgetrepo/Geocoder/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geocoder","label":"Geocoder","support2D":true,"_id":{"$wrap":"$oid","v":461}}
 {"k":"0000000082","o":"0000000651","v":"001"}
-{"_id":132,"_uid":132,"_dt":1400706717361,"_s":"96d48612a4c94c563824cdf7fbe8f760"}
-{"name":"Geoprocessing","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Geoprocessing/","icon":"/widgetrepo/Geoprocessing/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geoprocessing","label":"Geoprocessing","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":132}}
+{"_id":462,"_uid":462,"_dt":1410377106805,"_s":"998b1a06b1b1447138228c8168b838f3"}
+{"name":"Geoprocessing","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Geoprocessing/","icon":"/widgetrepo/Geoprocessing/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geoprocessing","label":"Geoprocessing","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":462}}
 {"k":"0000000082","o":"0000000618","v":"001"}
-{"_id":133,"_uid":133,"_dt":1400706717363,"_s":"67c41a669e1e5d6af9e37b22b982ed6f"}
-{"name":"Header","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Header/","icon":"/widgetrepo/Header/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Header","label":"Header","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":133}}
+{"_id":463,"_uid":463,"_dt":1410377106806,"_s":"62b5ad9e627a848d8f48f5885e0ecb74"}
+{"name":"Header","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Header/","icon":"/widgetrepo/Header/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Header","label":"Header","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":463}}
 {"k":"0000000082","o":"0000000667","v":"001"}
-{"_id":134,"_uid":134,"_dt":1400706717363,"_s":"12bc031e2188b4e3e1dd8a0d6c2d3201"}
-{"name":"HeaderController","label":"Header Controller","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"isController":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/HeaderController/","icon":"/widgetrepo/HeaderController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HeaderController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":134}}
+{"_id":464,"_uid":464,"_dt":1410377106806,"_s":"6fbc96243a6d93f7115857b6d7061e41"}
+{"name":"HeaderController","label":"Header Controller","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"isController":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/HeaderController/","icon":"/widgetrepo/HeaderController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HeaderController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":464}}
 {"k":"0000000082","o":"0000000663","v":"001"}
-{"_id":135,"_uid":135,"_dt":1400706717364,"_s":"510f97e249692602fe73a2c994d43044"}
-{"name":"HistogramTimeSlider","label":"Histogram Time Slider","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasUIFile":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HistogramTimeSlider/","icon":"/widgetrepo/HistogramTimeSlider/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HistogramTimeSlider","support2D":true,"_id":{"$wrap":"$oid","v":135}}
+{"_id":465,"_uid":465,"_dt":1410377106806,"_s":"aeca029788f740f3af5f45f25a49fc47"}
+{"name":"HistogramTimeSlider","label":"Histogram Time Slider","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasUIFile":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HistogramTimeSlider/","icon":"/widgetrepo/HistogramTimeSlider/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HistogramTimeSlider","support2D":true,"_id":{"$wrap":"$oid","v":465}}
 {"k":"0000000082","o":"0000000618","v":"001"}
-{"_id":136,"_uid":136,"_dt":1400706717364,"_s":"ef55bd0a5e5d3b99ec326ecdc8685f73"}
-{"name":"HomeButton","label":"Home Button","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HomeButton/","icon":"/widgetrepo/HomeButton/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HomeButton","support2D":true,"_id":{"$wrap":"$oid","v":136}}
+{"_id":466,"_uid":466,"_dt":1410377106806,"_s":"95b2a045f4314b5ec712787d7883106c"}
+{"name":"HomeButton","label":"Home Button","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HomeButton/","icon":"/widgetrepo/HomeButton/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HomeButton","support2D":true,"_id":{"$wrap":"$oid","v":466}}
 {"k":"0000000082","o":"0000000615","v":"001"}
-{"_id":137,"_uid":137,"_dt":1400706717365,"_s":"6d0979e121816dafc2468941e59a6cc6"}
-{"name":"LayerList","label":"Layer List","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/LayerList/","icon":"/widgetrepo/LayerList/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\LayerList","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":137}}
+{"_id":467,"_uid":467,"_dt":1410377106807,"_s":"4be1966d9f9ae4beb500d64a6781ce22"}
+{"name":"LayerList","label":"Layer List","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/LayerList/","icon":"/widgetrepo/LayerList/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\LayerList","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":467}}
 {"k":"0000000082","o":"0000000595","v":"001"}
-{"_id":138,"_uid":138,"_dt":1400706717366,"_s":"9bcc78ee4fa279b88e8c449c27189aa7"}
-{"name":"Legend","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Legend/","icon":"/widgetrepo/Legend/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Legend","label":"Legend","support2D":true,"_id":{"$wrap":"$oid","v":138}}
+{"_id":468,"_uid":468,"_dt":1410377106807,"_s":"6f9cda4e04a8ff43780cc8bc602c7b68"}
+{"name":"Legend","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Legend/","icon":"/widgetrepo/Legend/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Legend","label":"Legend","support2D":true,"_id":{"$wrap":"$oid","v":468}}
 {"k":"0000000082","o":"0000000639","v":"001"}
-{"_id":139,"_uid":139,"_dt":1400706717367,"_s":"68f3ce93e64691c83211135ec3aad0ce"}
-{"name":"MapCompare","label":"Map Compare","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":true,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MapCompare/","icon":"/widgetrepo/MapCompare/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MapCompare","support2D":false,"support3D":true,"_id":{"$wrap":"$oid","v":139}}
+{"_id":469,"_uid":469,"_dt":1410377106808,"_s":"eed88c1e0b4d70d694cbd7d0eafed963"}
+{"name":"MapCompare","label":"Map Compare","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":true,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MapCompare/","icon":"/widgetrepo/MapCompare/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MapCompare","support2D":false,"support3D":true,"_id":{"$wrap":"$oid","v":469}}
 {"k":"0000000082","o":"0000000621","v":"001"}
-{"_id":140,"_uid":140,"_dt":1400706717368,"_s":"f51d2def30d284f59eec7cf8765d7768"}
-{"name":"Measurement","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasStyle":false,"inPanel":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Measurement/","icon":"/widgetrepo/Measurement/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Measurement","label":"Measurement","support2D":true,"_id":{"$wrap":"$oid","v":140}}
+{"_id":470,"_uid":470,"_dt":1410377106808,"_s":"0076adabb6ba39fe69a8ec6620477216"}
+{"name":"Measurement","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasStyle":false,"inPanel":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Measurement/","icon":"/widgetrepo/Measurement/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Measurement","label":"Measurement","support2D":true,"_id":{"$wrap":"$oid","v":470}}
 {"k":"0000000082","o":"0000000617","v":"001"}
-{"_id":141,"_uid":141,"_dt":1400706717369,"_s":"26a82053b7af911c446ca1e2d9ed9980"}
-{"name":"MyLocation","label":"My Location","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MyLocation/","icon":"/widgetrepo/MyLocation/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MyLocation","support2D":true,"_id":{"$wrap":"$oid","v":141}}
+{"_id":471,"_uid":471,"_dt":1410377106809,"_s":"319e574894a499d5322dc3b877d4d357"}
+{"name":"MyLocation","label":"My Location","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MyLocation/","icon":"/widgetrepo/MyLocation/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MyLocation","support2D":true,"_id":{"$wrap":"$oid","v":471}}
 {"k":"0000000082","o":"0000000618","v":"001"}
-{"_id":142,"_uid":142,"_dt":1400706717376,"_s":"84fbb3d96515611254e41bc8f9eeac31"}
-{"name":"OilSpill","inPanel":false,"platform":"HTML","version":"","author":"@SpatialAgent","description":"RPS ASA","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OilSpill/","icon":"/widgetrepo/OilSpill/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OilSpill","label":"OilSpill","support2D":true,"_id":{"$wrap":"$oid","v":142}}
+{"_id":472,"_uid":472,"_dt":1410377106809,"_s":"bb70761d70e0aa299543f97f764ee0c0"}
+{"name":"OilSpill","inPanel":false,"platform":"HTML","version":"","author":"@SpatialAgent","description":"RPS ASA","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OilSpill/","icon":"/widgetrepo/OilSpill/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OilSpill","label":"OilSpill","support2D":true,"_id":{"$wrap":"$oid","v":472}}
 {"k":"0000000082","o":"0000000624","v":"001"}
-{"_id":143,"_uid":143,"_dt":1400706717378,"_s":"93b6aff37cd6d3dc17428916403a39cd"}
-{"name":"OverviewMap","label":"Overview Map","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":false,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OverviewMap/","icon":"/widgetrepo/OverviewMap/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OverviewMap","support2D":true,"_id":{"$wrap":"$oid","v":143}}
+{"_id":473,"_uid":473,"_dt":1410377106810,"_s":"11f9b4b9839dd057d9e7d8d15510d4e8"}
+{"name":"OverviewMap","label":"Overview Map","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":false,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OverviewMap/","icon":"/widgetrepo/OverviewMap/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OverviewMap","support2D":true,"_id":{"$wrap":"$oid","v":473}}
 {"k":"0000000082","o":"0000000563","v":"001"}
-{"_id":144,"_uid":144,"_dt":1400706717378,"_s":"d72309c731152bb532d37ce37d32c0f3"}
-{"name":"Print","label":"Print","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"","url":"/widgetrepo/Print/","icon":"/widgetrepo/Print/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Print","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":144}}
+{"_id":474,"_uid":474,"_dt":1410377106810,"_s":"5033872ec0513f6babcda4025e2eab5b"}
+{"name":"Print","label":"Print","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"","url":"/widgetrepo/Print/","icon":"/widgetrepo/Print/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Print","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":474}}
 {"k":"0000000082","o":"0000000589","v":"001"}
-{"_id":145,"_uid":145,"_dt":1400706717379,"_s":"c341f2d0f517c3454b3eb26ac68fc430"}
-{"name":"Query","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Query/","icon":"/widgetrepo/Query/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Query","label":"Query","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":145}}
+{"_id":475,"_uid":475,"_dt":1410377106811,"_s":"4600b1dee8c2f01dd314e284c85872f1"}
+{"name":"Query","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Query/","icon":"/widgetrepo/Query/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Query","label":"Query","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":475}}
 {"k":"0000000082","o":"0000000607","v":"001"}
-{"_id":146,"_uid":146,"_dt":1400706717379,"_s":"b968d1e54d390509ad67864933e788b8"}
-{"name":"Scalebar","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Scalebar/","icon":"/widgetrepo/Scalebar/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Scalebar","label":"Scalebar","support2D":true,"_id":{"$wrap":"$oid","v":146}}
+{"_id":476,"_uid":476,"_dt":1410377106811,"_s":"294a055fca46d89db7fd3e0a95143c65"}
+{"name":"Scalebar","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Scalebar/","icon":"/widgetrepo/Scalebar/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Scalebar","label":"Scalebar","support2D":true,"_id":{"$wrap":"$oid","v":476}}
 {"k":"0000000082","o":"0000000594","v":"001"}
-{"_id":147,"_uid":147,"_dt":1400706717379,"_s":"ee924ee8b789fcbe4a6bddb9602b312e"}
-{"name":"Search","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Search/","icon":"/widgetrepo/Search/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Search","label":"Search","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":147}}
+{"_id":477,"_uid":477,"_dt":1410377106811,"_s":"c46e01b4346cfcac285ea4c483402571"}
+{"name":"Search","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Search/","icon":"/widgetrepo/Search/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Search","label":"Search","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":477}}
 {"k":"0000000082","o":"0000000690","v":"001"}
-{"_id":148,"_uid":148,"_dt":1400706717380,"_s":"f6de1855b2420723cc983036126c21b9"}
-{"name":"SidebarController","label":"Sidebar Controller","inPanel":false,"platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"isController":true,"hasConfig":false,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/SidebarController/","icon":"/widgetrepo/SidebarController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\SidebarController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":148}}
+{"_id":478,"_uid":478,"_dt":1410377106811,"_s":"c2f15bd5e7e2c2cfd974bae9de563d05"}
+{"name":"SidebarController","label":"Sidebar Controller","inPanel":false,"platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"isController":true,"hasConfig":false,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/SidebarController/","icon":"/widgetrepo/SidebarController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\SidebarController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":478}}
 {"k":"0000000082","o":"0000000618","v":"001"}
-{"_id":149,"_uid":149,"_dt":1400706717380,"_s":"e6989b4a442cdcb53f50c87666bac910"}
-{"name":"Splash","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Splash/","icon":"/widgetrepo/Splash/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Splash","label":"Splash","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":149}}
+{"_id":479,"_uid":479,"_dt":1410377106811,"_s":"2dd81cf6876d7fd368c7ec39dbcb555e"}
+{"name":"Splash","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Splash/","icon":"/widgetrepo/Splash/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Splash","label":"Splash","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":479}}
 {"k":"0000000082","o":"0000000612","v":"001"}
-{"_id":150,"_uid":150,"_dt":1400706717381,"_s":"17828dfb2b1788aca5871b1fbfb141a3"}
-{"name":"Track","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Track/","icon":"/widgetrepo/Track/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Track","label":"Track","support2D":false,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":150}}
+{"_id":480,"_uid":480,"_dt":1410377106812,"_s":"224662923b2b2623cc05e56c1b11cd18"}
+{"name":"Track","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Track/","icon":"/widgetrepo/Track/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Track","label":"Track","support2D":false,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":480}}
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":451,"_uid":480,"_dt":1410475778755,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":452,"_uid":480,"_dt":1410475778757,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":453,"_uid":480,"_dt":1410475778757,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":454,"_uid":480,"_dt":1410475778757,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":455,"_uid":480,"_dt":1410475778757,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":456,"_uid":480,"_dt":1410475778758,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":457,"_uid":480,"_dt":1410475778759,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":458,"_uid":480,"_dt":1410475778759,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":459,"_uid":480,"_dt":1410475778759,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":460,"_uid":480,"_dt":1410475778759,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":461,"_uid":480,"_dt":1410475778759,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":462,"_uid":480,"_dt":1410475778760,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":463,"_uid":480,"_dt":1410475778760,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":464,"_uid":480,"_dt":1410475778761,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":465,"_uid":480,"_dt":1410475778761,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":466,"_uid":480,"_dt":1410475778762,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":467,"_uid":480,"_dt":1410475778762,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":468,"_uid":480,"_dt":1410475778762,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":469,"_uid":480,"_dt":1410475778762,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":470,"_uid":480,"_dt":1410475778763,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":471,"_uid":480,"_dt":1410475778763,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":472,"_uid":480,"_dt":1410475778763,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":473,"_uid":480,"_dt":1410475778763,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":474,"_uid":480,"_dt":1410475778764,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":475,"_uid":480,"_dt":1410475778765,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":476,"_uid":480,"_dt":1410475778765,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":477,"_uid":480,"_dt":1410475778765,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":478,"_uid":480,"_dt":1410475778766,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":479,"_uid":480,"_dt":1410475778766,"_a":"del"}
+
+{"k":"0000000053","o":"0000000000","v":"001"}
+{"_id":480,"_uid":480,"_dt":1410475778766,"_a":"del"}
+
+{"k":"0000000082","o":"0000000623","v":"001"}
+{"_id":481,"_uid":481,"_dt":1410475779224,"_s":"784cc362718cdcd852ac6a2fd5d961f5"}
+{"name":"About","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the widget","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/About/","icon":"/widgetrepo/About/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\About","label":"About","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":481}}
+{"k":"0000000082","o":"0000000637","v":"001"}
+{"_id":482,"_uid":482,"_dt":1410475779225,"_s":"94ce6639d30fd3d5d26f45681e8bed86"}
+{"name":"AttributeTable","label":"Attribute Table","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/AttributeTable/","icon":"/widgetrepo/AttributeTable/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\AttributeTable","support2D":true,"_id":{"$wrap":"$oid","v":482}}
+{"k":"0000000082","o":"0000000636","v":"001"}
+{"_id":483,"_uid":483,"_dt":1410475779226,"_s":"617ae957c92aafda61945d48b3e645df"}
+{"name":"BasemapGallery","label":"Basemap Gallery","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/BasemapGallery/","icon":"/widgetrepo/BasemapGallery/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\BasemapGallery","support2D":true,"_id":{"$wrap":"$oid","v":483}}
+{"k":"0000000082","o":"0000000673","v":"001"}
+{"_id":484,"_uid":484,"_dt":1410475779226,"_s":"1ef4d61649957549e172e73dc2438acd"}
+{"name":"Bookmark","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"the bookmark widget which support 2D and 3D map","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Bookmark/","icon":"/widgetrepo/Bookmark/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Bookmark","label":"Bookmark","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":484}}
+{"k":"0000000082","o":"0000000605","v":"001"}
+{"_id":485,"_uid":485,"_dt":1410475779227,"_s":"92fe304d9078f6392394b526d12e6b9c"}
+{"name":"Chart","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Chart/","icon":"/widgetrepo/Chart/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Chart","label":"Chart","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":485}}
+{"k":"0000000082","o":"0000000615","v":"001"}
+{"_id":486,"_uid":486,"_dt":1410475779228,"_s":"350993fe011ce675c36a7d82861648ed"}
+{"name":"Coordinate","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Coordinate/","icon":"/widgetrepo/Coordinate/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Coordinate","label":"Coordinate","support2D":true,"_id":{"$wrap":"$oid","v":486}}
+{"k":"0000000082","o":"0000000615","v":"001"}
+{"_id":487,"_uid":487,"_dt":1410475779228,"_s":"3ce4b504e9fbf000fb0352587a7b0d53"}
+{"name":"Directions","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Directions/","icon":"/widgetrepo/Directions/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Directions","label":"Directions","support2D":true,"_id":{"$wrap":"$oid","v":487}}
+{"k":"0000000082","o":"0000000584","v":"001"}
+{"_id":488,"_uid":488,"_dt":1410475779229,"_s":"0a5832a4e588c2ada9cc55b56989e645"}
+{"name":"Draw","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Draw/","icon":"/widgetrepo/Draw/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Draw","label":"Draw","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":488}}
+{"k":"0000000082","o":"0000000584","v":"001"}
+{"_id":489,"_uid":489,"_dt":1410475779229,"_s":"d00da92dd101f4924022141231a8fee0"}
+{"name":"Edit","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Edit/","icon":"/widgetrepo/Edit/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Edit","label":"Edit","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":489}}
+{"k":"0000000082","o":"0000000619","v":"001"}
+{"_id":490,"_uid":490,"_dt":1410475779230,"_s":"8d200e18b7bfbd82bf5ff140d4843a5f"}
+{"name":"Footer","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasSettingPage":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Footer/","icon":"/widgetrepo/Footer/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Footer","label":"Footer","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":490}}
+{"k":"0000000082","o":"0000000607","v":"001"}
+{"_id":491,"_uid":491,"_dt":1410475779230,"_s":"5cdf84680b87ed6647c79cad9ba38c4a"}
+{"name":"Geocoder","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Geocoder/","icon":"/widgetrepo/Geocoder/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geocoder","label":"Geocoder","support2D":true,"_id":{"$wrap":"$oid","v":491}}
+{"k":"0000000082","o":"0000000651","v":"001"}
+{"_id":492,"_uid":492,"_dt":1410475779233,"_s":"ac921b4a6fe5306b760964aa782dc017"}
+{"name":"Geoprocessing","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Geoprocessing/","icon":"/widgetrepo/Geoprocessing/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Geoprocessing","label":"Geoprocessing","support2D":true,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":492}}
+{"k":"0000000082","o":"0000000618","v":"001"}
+{"_id":493,"_uid":493,"_dt":1410475779234,"_s":"11a972ba0d303a51d1c6fba9607bdcb5"}
+{"name":"Header","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Header/","icon":"/widgetrepo/Header/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Header","label":"Header","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":493}}
+{"k":"0000000082","o":"0000000667","v":"001"}
+{"_id":494,"_uid":494,"_dt":1410475779235,"_s":"cd2f97124044520ea008f14272b58cd0"}
+{"name":"HeaderController","label":"Header Controller","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"isController":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/HeaderController/","icon":"/widgetrepo/HeaderController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HeaderController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":494}}
+{"k":"0000000082","o":"0000000663","v":"001"}
+{"_id":495,"_uid":495,"_dt":1410475779235,"_s":"1dcfd665bccd814fe9999e46d14a6d16"}
+{"name":"HistogramTimeSlider","label":"Histogram Time Slider","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasUIFile":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HistogramTimeSlider/","icon":"/widgetrepo/HistogramTimeSlider/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HistogramTimeSlider","support2D":true,"_id":{"$wrap":"$oid","v":495}}
+{"k":"0000000082","o":"0000000618","v":"001"}
+{"_id":496,"_uid":496,"_dt":1410475779236,"_s":"e985e0514069e07bdbd05e0e852acc5f"}
+{"name":"HomeButton","label":"Home Button","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/HomeButton/","icon":"/widgetrepo/HomeButton/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\HomeButton","support2D":true,"_id":{"$wrap":"$oid","v":496}}
+{"k":"0000000082","o":"0000000615","v":"001"}
+{"_id":497,"_uid":497,"_dt":1410475779236,"_s":"b5d017ce985f20ff84391af88f0d535c"}
+{"name":"LayerList","label":"Layer List","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/LayerList/","icon":"/widgetrepo/LayerList/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\LayerList","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":497}}
+{"k":"0000000082","o":"0000000595","v":"001"}
+{"_id":498,"_uid":498,"_dt":1410475779238,"_s":"de135b0949f7fbbe2952880305a72ba8"}
+{"name":"Legend","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"inPanel":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Legend/","icon":"/widgetrepo/Legend/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Legend","label":"Legend","support2D":true,"_id":{"$wrap":"$oid","v":498}}
+{"k":"0000000082","o":"0000000639","v":"001"}
+{"_id":499,"_uid":499,"_dt":1410475779239,"_s":"52603077eaa17695c2821202add6a376"}
+{"name":"MapCompare","label":"Map Compare","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasConfig":false,"inPanel":true,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MapCompare/","icon":"/widgetrepo/MapCompare/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MapCompare","support2D":false,"support3D":true,"_id":{"$wrap":"$oid","v":499}}
+{"k":"0000000082","o":"0000000621","v":"001"}
+{"_id":500,"_uid":500,"_dt":1410475779240,"_s":"50b30900e6ed4b8da94330dc308570ec"}
+{"name":"Measurement","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"hasLocale":false,"hasStyle":false,"inPanel":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Measurement/","icon":"/widgetrepo/Measurement/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Measurement","label":"Measurement","support2D":true,"_id":{"$wrap":"$oid","v":500}}
+{"k":"0000000082","o":"0000000617","v":"001"}
+{"_id":501,"_uid":501,"_dt":1410475779242,"_s":"575150fac605b8ef8db15481e627d838"}
+{"name":"MyLocation","label":"My Location","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":false,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/MyLocation/","icon":"/widgetrepo/MyLocation/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\MyLocation","support2D":true,"_id":{"$wrap":"$oid","v":501}}
+{"k":"0000000082","o":"0000000618","v":"001"}
+{"_id":502,"_uid":502,"_dt":1410475779243,"_s":"0f08c7efbc48c447e61d746bdd967692"}
+{"name":"OilSpill","inPanel":false,"platform":"HTML","version":"","author":"@SpatialAgent","description":"RPS ASA","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasUIFile":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OilSpill/","icon":"/widgetrepo/OilSpill/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OilSpill","label":"OilSpill","support2D":true,"_id":{"$wrap":"$oid","v":502}}
+{"k":"0000000082","o":"0000000624","v":"001"}
+{"_id":503,"_uid":503,"_dt":1410475779245,"_s":"2cc1ea5cd885f9e86ef5188daf4f17b4"}
+{"name":"OverviewMap","label":"Overview Map","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":false,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/OverviewMap/","icon":"/widgetrepo/OverviewMap/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\OverviewMap","support2D":true,"_id":{"$wrap":"$oid","v":503}}
+{"k":"0000000082","o":"0000000563","v":"001"}
+{"_id":504,"_uid":504,"_dt":1410475779246,"_s":"fc9668400c73dbd263a07b300c752a2b"}
+{"name":"Print","label":"Print","type":"widget","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"","url":"/widgetrepo/Print/","icon":"/widgetrepo/Print/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Print","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":504}}
+{"k":"0000000082","o":"0000000589","v":"001"}
+{"_id":505,"_uid":505,"_dt":1410475779246,"_s":"34a0f4bacd7493b7e7dac1743139864f"}
+{"name":"Query","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Query/","icon":"/widgetrepo/Query/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Query","label":"Query","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":505}}
+{"k":"0000000082","o":"0000000607","v":"001"}
+{"_id":506,"_uid":506,"_dt":1410475779247,"_s":"134f5a454d7f9f65dcecef676850470b"}
+{"name":"Scalebar","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"hasUIFile":false,"hasStyle":true,"hasConfig":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Scalebar/","icon":"/widgetrepo/Scalebar/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Scalebar","label":"Scalebar","support2D":true,"_id":{"$wrap":"$oid","v":506}}
+{"k":"0000000082","o":"0000000594","v":"001"}
+{"_id":507,"_uid":507,"_dt":1410475779247,"_s":"7520e935cfa909f9af58c8e6c61817ad"}
+{"name":"Search","platform":"HTML","version":"","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Search/","icon":"/widgetrepo/Search/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Search","label":"Search","support2D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":507}}
+{"k":"0000000082","o":"0000000690","v":"001"}
+{"_id":508,"_uid":508,"_dt":1410475779248,"_s":"bc05e035656b6efe4495feb0a669e395"}
+{"name":"SidebarController","label":"Sidebar Controller","inPanel":false,"platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasLocale":false,"isController":true,"hasConfig":false,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true},"url":"/widgetrepo/SidebarController/","icon":"/widgetrepo/SidebarController/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\SidebarController","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":508}}
+{"k":"0000000082","o":"0000000618","v":"001"}
+{"_id":509,"_uid":509,"_dt":1410475779248,"_s":"d010daaf8c381bb1df2b0e1490090355"}
+{"name":"Splash","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","properties":{"inPanel":false,"hasConfig":false,"hasLocale":true,"hasStyle":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"url":"/widgetrepo/Splash/","icon":"/widgetrepo/Splash/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Splash","label":"Splash","support2D":true,"support3D":true,"_id":{"$wrap":"$oid","v":509}}
+{"k":"0000000082","o":"0000000612","v":"001"}
+{"_id":510,"_uid":510,"_dt":1410475779249,"_s":"70874e110a2a5bbde124fad627c6543d"}
+{"name":"Track","platform":"HTML","version":"0.0.1","author":"Esri R&D Center Beijing","description":"","copyright":"","license":"http://www.apache.org/licenses/LICENSE-2.0","url":"/widgetrepo/Track/","icon":"/widgetrepo/Track/images/icon.png","location":"C:\\projects\\webappbuilder\\builder\\stemapp\\widgets\\Track","label":"Track","support2D":false,"support3D":true,"properties":{"inPanel":true,"hasLocale":true,"hasStyle":true,"hasConfig":true,"hasUIFile":true,"hasSettingPage":true,"hasSettingUIFile":true,"hasSettingLocale":true,"hasSettingStyle":true,"isController":false},"_id":{"$wrap":"$oid","v":510}}

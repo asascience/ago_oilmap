@@ -145,7 +145,7 @@
       "right": 0,
       "bottom": 0
     },
-    "itemId": "6e03e8c26aad4b9c92a87c1063ddb0e3",
+    "itemId": "1d392fcd722b47bb8d0c3373baf3d857",
     "id": "map",
     "mapOptions": {
       "extent": {
@@ -204,5 +204,5 @@
   },
   "widgetManifestsMerged": true,
   "httpProxy": "/proxy.js",
-  "locale": "en-us",
+  "locale": "en-us"
 }

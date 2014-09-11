@@ -1,27 +1,12 @@
 {"k":"0000000078","o":"0000000113","v":"001"}
-{"_id":6,"_uid":8,"_dt":1400705778416,"_s":"27689e012989119a64369c2f48b397a9"}
-{"name":"OilSpill_Chevron_GOM","description":"","lastUpdated":"2014-05-21 16:56:18","_id":{"$wrap":"$oid","v":6}}
-{"k":"0000000078","o":"0000000146","v":"001"}
-{"_id":7,"_uid":8,"_dt":1400705737569,"_s":"a9773c2be9f501ec94aab23589fbf431"}
-{"name":"OilMap_lightningTalk","description":"Oilmap Widget Demo","lastUpdated":"2014-05-21 16:55:37","is3D":"false","_id":{"$wrap":"$oid","v":7}}
-{"k":"0000000078","o":"0000000117","v":"001"}
-{"_id":8,"_uid":8,"_dt":1400702515666,"_s":"09df22c5b3062b4eeba1d3b42d428bc1"}
-{"name":"OilSpill_Chevron_SANFran","description":"","lastUpdated":"2014-05-21 16:01:55","_id":{"$wrap":"$oid","v":8}}
-{"k":"0000000078","o":"0000000117","v":"001"}
-{"_id":8,"_uid":8,"_dt":1400707143062,"_s":"a6fd9fe101f7fa0e52f704e4f557f604"}
-{"name":"OilSpill_Chevron_SANFran","description":"","lastUpdated":"2014-05-21 17:19:03","_id":{"$wrap":"$oid","v":8}}
-{"k":"0000000078","o":"0000000113","v":"001"}
-{"_id":6,"_uid":8,"_dt":1400707348613,"_s":"721fc6d94aa698bcada747554f5af604"}
-{"name":"OilSpill_Chevron_GOM","description":"","lastUpdated":"2014-05-21 17:22:28","_id":{"$wrap":"$oid","v":6}}
-{"k":"0000000078","o":"0000000146","v":"001"}
-{"_id":7,"_uid":8,"_dt":1400708071534,"_s":"37148623d2a2bd019a7186407fe35941"}
-{"name":"OilMap_lightningTalk","description":"Oilmap Widget Demo","lastUpdated":"2014-05-21 17:34:31","is3D":"false","_id":{"$wrap":"$oid","v":7}}
+{"_id":6,"_uid":8,"_dt":1400710661576,"_s":"dc00dfcedec4f64276233ce8da226fd7"}
+{"name":"OilSpill_Chevron_GOM","description":"","lastUpdated":"2014-05-21 18:17:41","_id":{"$wrap":"$oid","v":6}}
 {"k":"0000000078","o":"0000000146","v":"001"}
 {"_id":7,"_uid":8,"_dt":1400708098943,"_s":"eae7f3d940ef9ebd5cd579369cb34b87"}
 {"name":"OilMap_lightningTalk","description":"Oilmap Widget Demo","lastUpdated":"2014-05-21 17:34:58","is3D":"false","_id":{"$wrap":"$oid","v":7}}
-{"k":"0000000078","o":"0000000113","v":"001"}
-{"_id":6,"_uid":8,"_dt":1400710661576,"_s":"dc00dfcedec4f64276233ce8da226fd7"}
-{"name":"OilSpill_Chevron_GOM","description":"","lastUpdated":"2014-05-21 18:17:41","_id":{"$wrap":"$oid","v":6}}
 {"k":"0000000078","o":"0000000117","v":"001"}
 {"_id":8,"_uid":8,"_dt":1400711249650,"_s":"1599275dc0489e5d93f00efff7231666"}
 {"name":"OilSpill_Chevron_SANFran","description":"","lastUpdated":"2014-05-21 18:27:29","_id":{"$wrap":"$oid","v":8}}
+{"k":"0000000078","o":"0000000146","v":"001"}
+{"_id":7,"_uid":8,"_dt":1402077368777,"_s":"560383be83653e552f1d84a3ef19d36f"}
+{"name":"OilMap_lightningTalk","description":"Oilmap Widget Demo","lastUpdated":"2014-06-06 13:56:08","is3D":"false","_id":{"$wrap":"$oid","v":7}}
