@@ -1,0 +1,12 @@
+{
+  "title": "Oil Spill for Chevron San Francisco",
+  "client_key": "chevronshippingsanfran",
+  "client_url": "http://map.asascience.com/chev_oilmap_sf/RunModel.aspx?ClientKey=chevronshippingsanfran&ModelType=OILSPILL&WaterTemp=72.6F&Winds=390&Currents=488&EcopWinds=GFS_WINDS&EcopCurrents=SANFRAN_currents&Duration=6&Location=WORLD&group=ae1645fe47ea4ac0a47dee000d0e71bc&every1share=true",
+  "color": "#d2d2d2",
+  "lyrTrajectory": "Trajectory",
+  "lyrParticles": "Particles",
+  "lyrThickness": "Thickness",
+  "lyrCurrents": "Currents",
+  "lyrWinds": "Winds",
+  "colors": ["#56b800", "#61bd00", "#6bc200", "#79c900", "#83cf00", "#91d400", "#9fd900", "#aade00", "#bbe600", "#cbeb00", "#d8f000", "#e4f500", "#f6fa00", "#fff700", "#ffe500", "#ffd500", "#ffc800", "#ffb700", "#ffa600", "#ff9500", "#ff8400", "#ff7300", "#ff6200", "#ff5100", "#ff4000"]
+}

@@ -1,192 +1,80 @@
 {
-  "theme": {
-    "name": "MainTheme",
-    "styles": [
-      "default",
-      "black",
-      "green",
-      "cyan"
-    ]
-  },
-  "portalUrl": "http://www.arcgis.com/",
-  "appId": "senJpIJA845L4FlP",
-  "title": "OilSpill Map",
-  "subtitle": "with ArcGIS WebApp Builder",
-  "geometryService": {
-    "url": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer"
-  },
-  "logo": "images/app-logo.png",
-  "links": [
-    {
-      "label": "RPS ASA",
-      "url": "//www.arcgis.com"
-    }
-  ],
-  "preloadWidgets": {
-    "panel": {
-      "uri": "themes/FoldableTheme/panels/TitlePanel/Panel",
-      "positionRelativeTo": "map"
-    },
-    "widgets": [
-      {
-        "uri": "widgets/HeaderController/Widget",
-        "positionRelativeTo": "browser",
-        "position": {
-          "left": 0,
-          "top": 0,
-          "right": 0,
-          "height": 40
-        },
-        "id": "widgets/HeaderController/Widget_1",
-        "name": "HeaderController",
-        "label": "Header Controller"
-      },{
-        "label": "Coordinate",
-        "uri": "widgets/Coordinate/Widget",
-        "position": {
-          "left": 200,
-          "bottom": 10
-        }
-      }, {
-      "label": "Select a basemap",
-      "uri": "widgets/BasemapGallery/Widget",
-      "inPanel": true,
-      "position": {
-        "left": 45,
-        "top": 5,
-        "width": 430,
-        "height": 410
-      }
-    }, {
-        "uri": "widgets/AttributeTable/Widget"
-      },
-      {
-        "uri": "widgets/Geocoder/Widget",
-        "position": {
-          "left": 45,
-          "top": 5
-        },
-        "id": "widgets/Geocoder/Widget_2",
-        "positionRelativeTo": "map",
-        "name": "Geocoder",
-        "label": "Geocoder"
-      },
-      {
-        "label": "Oil Spill",
-        "uri": "widgets/OilSpill/Widget",
-        "position": {
-          "left": 10,
-          "bottom": -200,
-          "width": 750,
-          "height": 400
-        },
-        "id": "widgets/OilSpill/Widget_3",
-        "positionRelativeTo": "map",
-        "name": "OilSpill"
-      },
-      {
-        "label": "Overview Map",
-        "uri": "widgets/OverviewMap/Widget",
-        "position": {
-          "right": 0,
-          "bottom": 0
-        },
-        "id": "widgets/OverviewMap/Widget_4",
-        "positionRelativeTo": "map",
-        "name": "OverviewMap"
-      },
-      {
-        "uri": "widgets/HomeButton/Widget",
-        "position": {
-          "left": 7,
-          "top": 75
-        },
-        "id": "widgets/HomeButton/Widget_5",
-        "positionRelativeTo": "map",
-        "name": "HomeButton",
-        "label": "Home Button"
-      },
-      {
-        "uri": "widgets/MyLocation/Widget",
-        "position": {
-          "left": 7,
-          "top": 110
-        },
-        "id": "widgets/MyLocation/Widget_6",
-        "positionRelativeTo": "map",
-        "name": "MyLocation",
-        "label": "My Location"
-      }
-    ]
-  },
-  "map": {
-    "3D": false,
-    "2D": true,
-    "position": {
-      "left": 0,
-      "top": 40,
-      "right": 0,
-      "bottom": 0
-    },
-    "itemId": "fe88e18a2b604fa7b9c78eb1080286e0",
-    "id": "map",
-    "mapOptions": {
-      "extent": {
-        "xmin": -11082975.026004508,
-        "ymin": 2581392.378116338,
-        "xmax": -8627206.181259017,
-        "ymax": 3391013.38171271,
-        "spatialReference": {
-          "wkid": 102100
-        }
-      }
-    }
-  },
-  "widgetPool": {
-    "panel": {
-      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
-      "positionRelativeTo": "map",
-      "position": {
-        "top": 5,
-        "right": 5,
-        "bottom": 5
-      }
-    },
-    "widgets": [
-      {
-        "label": "Legend",
-        "uri": "widgets/Legend/Widget",
-        "id": "widgets/Legend/Widget_7",
-        "name": "Legend",
-        "index": 0
-      },
-      {
-        "label": "Layer List",
-        "uri": "widgets/LayerList/Widget",
-        "id": "widgets/LayerList/Widget_8",
-        "name": "LayerList",
-        "index": 1
-      },
-      {
-        "label": "Search",
-        "uri": "widgets/Search/Widget",
-        "id": "widgets/Search/Widget_9",
-        "name": "Search",
-        "index": 2
-      }
-    ]
-  },
-  "geocodeService": {
-    "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
-  },
-  "routeService": {
-    "url": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
-  },
-  "printTask": {
-    "url": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task"
-  },
-  "httpProxy": "/proxy.js",
-  "locale": "en-us",
-  "bingMapsKey": "",
-  "widgetManifestsMerged": true
+	"preloadWidgets": {
+		"panel": {
+			"uri": "themes/FoldableTheme/panels/TitlePanel/Panel"
+		},
+		"widgets": [
+			{
+				"uri": "widgets/HeaderController/Widget",
+				"positionRelativeTo": "browser",
+				"position": {
+					"left": 0,
+					"top": 0,
+					"right": 0,
+					"height": 40
+				}
+			}, {
+				"uri": "widgets/Geocoder/Widget",
+				"position": {
+					"left": 45,
+					"top": 5
+				}
+			}, {
+				"label": "Oil Spill",
+				"uri": "widgets/oilmap/Widget",
+				"position": {
+					"right": 10,
+					"bottom": -200,
+					"width": 750,
+					"height": 400
+				}
+			}, {
+				"label": "Overview Map",
+				"uri": "widgets/OverviewMap/Widget",
+				"position": {
+					"right": 0,
+					"bottom": 0
+				}
+			}, {
+				"uri": "widgets/HomeButton/Widget",
+				"inPanel": false,
+				"position": {
+					"left": 7,
+					"top": 75
+				}
+			}, {
+				"uri": "widgets/MyLocation/Widget",
+				"inPanel": false,
+				"position": {
+					"left": 7,
+					"top": 110
+				}
+			}
+		]
+	},
+
+	"widgetPool": {
+		"panel": {
+			"uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+			"positionRelativeTo": "map",
+			"position": {
+				"top": 5,
+				"right": 5,
+				"bottom": 5
+			}
+		},
+
+		"widgets": [
+			{
+				"label": "Legend",
+				"uri": "widgets/Legend/Widget"
+			}, {
+				"label": "Layer List",
+				"uri": "widgets/LayerList/Widget"
+			}, {
+				"label": "Search",
+				"uri": "widgets/Search/Widget"
+			}
+		]
+	}
 }

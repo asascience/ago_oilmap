@@ -125,6 +125,9 @@ define([
 
       startup : function() {
          esriConfig.defaults.io.timeout = 6000000;
+
+         //esriConfig.defaults.io.proxyUrl = "";
+         //esriConfig.defaults.io.alwaysUseProxy = false;
          this.inherited(arguments);
          this._processMapInfo(this.map.itemInfo);
          this.own(on(this.map, "mouse-move", lang.hitch(this, this.onMouseMove)));
@@ -421,7 +424,7 @@ define([
          var wProcessing = domConstruct.create('div', {
              id: 'divProcessing',
              class: 'widgetProcessing',
-             innerHTML: 'Running Oilmap Model <img src="widgets/oilmap/images/loader.gif">'
+             innerHTML: 'Running Oilmap Model <img src="widgets/oilspill/images/loader.gif">'
          }, wBody);
               
       },
@@ -501,6 +504,7 @@ define([
             domClass.remove("divPlay", "widgetPause");
          } else {
             this.map.graphics.clear();
+            this.map.graphics.add(this.spillpointgraphic);
             this.timer = setInterval(lang.hitch(this, this._advanceTimeExt), 2000);
             domClass.add("divPlay", "widgetPause");
          }
@@ -549,13 +553,15 @@ define([
             if (this.playing)
                this.togglePlay();
                
-            var pms = new PictureMarkerSymbol("widgets/oilmap/images/spillsite.png", 14, 14);
+            var pms = new PictureMarkerSymbol("widgets/oilspill/images/spillsite.png", 14, 14);
             var gra = new Graphic(event.mapPoint, pms, {});
+            this.spillpointgraphic = gra;
             this.map.graphics.add(gra);
             
             var pt = webMercatorUtils.webMercatorToGeographic(event.mapPoint);
             var url = this.config.client_url;
-
+            esriConfig.defaults.io.proxyUrl = "http://webmaps.es2-inc.com/webapps/proxy.ashx?";
+            ;
             url += "&CaseName=" + registry.byId("spillName").value;
             url += "&StartDate=" + this._toModelDate(this.spillParams.date);
             url += "&simLength=" + this.spillParams.duration;
@@ -698,7 +704,7 @@ define([
                   speed = 0.1;
                  var size = parseInt(15 * Math.round(speed*10) / 5);
                  var dir = gra.attributes.Direction;
-                 var pms = new PictureMarkerSymbol("widgets/oilmap/images/current.png", size, size);
+                 var pms = new PictureMarkerSymbol("widgets/oilspill/images/current.png", size, size);
                  pms.setAngle(dir);
                  var oldGra = me._getFeature(me.graCurrents, "ncells", value);
                  var infoTemplate = new InfoTemplate("Water Speed",
@@ -727,7 +733,7 @@ define([
                  var speed = 5 * Math.round(gra.attributes.Speed/5);
                  var size = 40;
                  var dir = gra.attributes.Direction;
-                 var pms = new PictureMarkerSymbol("widgets/oilmap/images/" + speed +".png", size, size);
+                 var pms = new PictureMarkerSymbol("widgets/oilspill/images/" + speed +".png", size, size);
                  pms.setAngle(dir);
                  var oldGra = me._getFeature(me.graWinds, "ncells", value);
                  var infoTemplate = new InfoTemplate("Wind Speed",
