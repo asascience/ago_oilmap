@@ -33,7 +33,9 @@ define([
    'esri/TimeExtent',
    "esri/geometry/Point",
    'dijit/Dialog',
-   'esri/InfoTemplate'
+   'esri/InfoTemplate',
+   'dijit/Tooltip',
+   'dijit/form/CheckBox'
 ], function(
    BaseWidget, 
    declare, 
@@ -69,7 +71,9 @@ define([
    TimeExtent,
    Point,
    Dialog,
-   InfoTemplate
+   InfoTemplate,
+   Tooltip,
+   CheckBox
 ) {
    var clazz = declare([BaseWidget], {
 
@@ -177,7 +181,8 @@ define([
       _createUI : function() {
          
          domConstruct.empty(this.domNode);
-            
+          
+         var that = this;
          var bodyColor = Color.fromString(this.config.color || "#ff0000");
          var darkColor = Color.fromString("#000000");
          var titleColor = Color.blendColors(bodyColor, darkColor, .3);
@@ -187,19 +192,25 @@ define([
              class: 'widgetContainer rounded shadow'
          }, this.domNode);
          domStyle.set(wContainer, "backgroundColor", bodyColor.toHex());
+
          var wTitle = domConstruct.create('div', {
              class: 'widgetTitle',
-             innerHTML: "Oil Spill Analysis"
+             innerHTML: "OILMAP for AGOL"
          }, wContainer);
-         var wSubTitle = domConstruct.create('div', {
-             class: 'widgetsubTitle',
-             innerHTML: "Provided by RPS ASA"
-         }, wContainer);
+         on(wTitle, "click", lang.hitch(this, this.gotoURL));
+         
+         
          //latlong
          var latlongTitle = domConstruct.create('div', {
              id: 'latlongText',
              innerHTML: "",
-             style:'padding-left:430px;position: absolute;top:19px'
+             style:'padding-left:420px;position: absolute;top:17px'
+         }, wContainer);
+
+         //logo
+         var logoImage = domConstruct.create('div', {
+             id: 'logoimg',
+             class: 'logoimg'
          }, wContainer);
 
          domStyle.set(wTitle, "backgroundColor", titleColor.toHex());
@@ -237,14 +248,14 @@ define([
          var spillDt = new DateTextBox({
               value: this._toCalDate(dt),
               id: "spillDate",
-              style: "width:100px",
+              style: "width:107px",
               constraints:{min:this._toCalDate(minD), max:this._toCalDate(maxD)}
           }, divDate );
 
          // SPILL TIME
          var colTime = domConstruct.create('div', {
             class: 'widgetCol break',
-            innerHTML: "TIME (gmt)"
+            innerHTML: "TIME (GMT)"
          }, wForm);
          var divTime = domConstruct.create('div', {
             class: 'widgetColContent'
@@ -338,11 +349,50 @@ define([
          }, wBody);
          var divLocate = domConstruct.create('div', {
             id: 'divLocate',
-            class: 'widgetLocate',
+            class: 'widgetLocateDisabled',
             innerHTML: 'LOCATE'
          }, wBottom);
          on(divLocate, "click", lang.hitch(this, this.toggleLocate));
          
+         var wSubTitle = domConstruct.create('div', {
+             class: 'widgetsubTitle',
+             innerHTML: "Disclaimer",
+             id: 'disclaim'
+         }, wBottom);
+
+         //chk = dojo.create("input", {id:"cbox", type:"checkbox"}, widgetNode);
+         var lbl = dojo.create("label", {innerHTML:"Check to Run", "for":"cbox",
+             onclick: function(b){ 
+              //alert('asdf')
+              that.gotoDisclaimerURL();
+             }}, wSubTitle);
+         var chk = dojo.create("input", {id:"cbox", type:"checkbox"}, wSubTitle);
+         dojo.style(lbl, "marginLeft", ".5em");
+         dojo.style(lbl, "marginRight", ".5em");
+       
+         var checkBox = new CheckBox({
+              name: "checkBox",
+              id: 'checkboxdis',
+              value: "agreed",
+              checked: false,
+              onChange: function(b){ 
+                if (b == true) {
+                    domClass.remove("divLocate", "widgetLocateDisabled");
+                    domClass.add("divLocate", "widgetLocate");
+                 } else {
+                    domClass.add("divLocate", "widgetLocateDisabled");
+                    domClass.remove("divLocate", "widgetLocate");
+                 }
+              }
+          }, chk).startup();
+
+         //checkBox.domNode.appendChild(lbl);
+
+         new Tooltip({
+            connectId: wSubTitle,
+            label: "THE RPS ASA SOFTWARE IS INTENDED FOR USE BY QUALIFIED USERS WHO WILL EXERCISE SOUND JUDGMENT AND EXPERTISE IN CONNECTION WITH THEIR USE OF THE RPS ASA SOFTWARE. THE EFFECTIVE OPERATION OF THE RPS ASA SOFTWARE DEPENDS, AMONG OTHER THINGS, UPON THE ACCURACY OF DATA INTRODUCED BY USERS OR MADE AVAILABLE BY THIRD PARTIES. TO THE EXTENT THAT THE RPS ASA SOFTWARE INCLUDES DATA PROVIDED BY RPS ASA, SUCH DATA IS FROM PUBLIC OR GOVERNMENTAL SOURCES THAT RPS ASA BELIEVES TO BE RELIABLE, BUT RPS ASA CANNOT BE RESPONSIBLE FOR INACCURATE OR INCOMPLETE DATA. AS A PREDICTIVE TOOL, RPS ASA SOFTWARE CAN BE USED TO PRODUCE APPROXIMATE FORECASTS THAT WILL VARY ACCORDING TO LOCAL CONDITIONS AND THE QUALITY OF THE DATA AVAILABLE FOR THE LOCAL AREA. BY USING THIS SOFTWARE, THE USER AGREES THAT NO LIABILITY IS ACCEPTED BY RPS ASA."
+          });
+
          // TIME
          var wTime = domConstruct.create('div', {
              id: 'divTime',
@@ -371,7 +421,7 @@ define([
          var wProcessing = domConstruct.create('div', {
              id: 'divProcessing',
              class: 'widgetProcessing',
-             innerHTML: 'Running Oil Spill Model <img src="widgets/OilSpill/images/loader.gif">'
+             innerHTML: 'Running Oilmap Model <img src="widgets/oilmap/images/loader.gif">'
          }, wBody);
               
       },
@@ -457,6 +507,10 @@ define([
          this.playing = !this.playing;
       },
       
+      gotoDisclaimerURL: function(){
+        window.open('http://asascience.com/agreements/oilmap.shtml','_new');
+
+      },
       toggleLocate: function() {
          if (this.toolMode) {
             domClass.remove("divLocate", "widgetLocateOn");
@@ -495,7 +549,7 @@ define([
             if (this.playing)
                this.togglePlay();
                
-            var pms = new PictureMarkerSymbol("widgets/OilSpill/images/spillsite.png", 18, 18);
+            var pms = new PictureMarkerSymbol("widgets/oilmap/images/spillsite.png", 14, 14);
             var gra = new Graphic(event.mapPoint, pms, {});
             this.map.graphics.add(gra);
             
@@ -534,7 +588,7 @@ define([
          //this.toggleControls();
          var myDialog = new Dialog({
             title: "Alert",
-            content: "An error occurred with the model.  Please try check the location and try again or contact the application Administrator.",
+            content: "An error occurred with the model.  Please try check the location is over water and try again or contact the application Administrator.",
             style: "width: 300px"
          });
          myDialog.show();
@@ -644,7 +698,7 @@ define([
                   speed = 0.1;
                  var size = parseInt(15 * Math.round(speed*10) / 5);
                  var dir = gra.attributes.Direction;
-                 var pms = new PictureMarkerSymbol("widgets/OilSpill/images/current.png", size, size);
+                 var pms = new PictureMarkerSymbol("widgets/oilmap/images/current.png", size, size);
                  pms.setAngle(dir);
                  var oldGra = me._getFeature(me.graCurrents, "ncells", value);
                  var infoTemplate = new InfoTemplate("Water Speed",
@@ -673,7 +727,7 @@ define([
                  var speed = 5 * Math.round(gra.attributes.Speed/5);
                  var size = 40;
                  var dir = gra.attributes.Direction;
-                 var pms = new PictureMarkerSymbol("widgets/OilSpill/images/" + speed +".png", size, size);
+                 var pms = new PictureMarkerSymbol("widgets/oilmap/images/" + speed +".png", size, size);
                  pms.setAngle(dir);
                  var oldGra = me._getFeature(me.graWinds, "ncells", value);
                  var infoTemplate = new InfoTemplate("Wind Speed",

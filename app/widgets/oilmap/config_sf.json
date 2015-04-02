@@ -1,7 +1,7 @@
 {
-  "title": "Oil Spill for Chevron Southern California",
-  "client_key": "chevronshippingsouthcali",
-  "client_url": "http://map.asascience.com/chev_oilmap_scali/RunModel.aspx?ClientKey=chevronshippingsouthcali&ModelType=OILSPILL&WaterTemp=72.6F&Winds=390&Currents=765&EcopWinds=GFS_WINDS&EcopCurrents=HYCOM_global_Navy_currents&Duration=6&Location=WORLD&group=26a0a875df034445a8c840c6671f8f00&every1share=true",
+  "title": "Oil Spill for Chevron San Francisco",
+  "client_key": "chevronshippingsanfran",
+  "client_url": "http://map.asascience.com/chev_oilmap_sf/RunModel.aspx?ClientKey=chevronshippingsanfran&ModelType=OILSPILL&WaterTemp=72.6F&Winds=390&Currents=488&EcopWinds=GFS_WINDS&EcopCurrents=SANFRAN_currents&Duration=6&Location=WORLD&group=ae1645fe47ea4ac0a47dee000d0e71bc&every1share=true",
   "color": "#d2d2d2",
   "lyrTrajectory": "Trajectory",
   "lyrParticles": "Particles",

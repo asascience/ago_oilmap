@@ -34,7 +34,8 @@ define([
    "esri/geometry/Point",
    'dijit/Dialog',
    'esri/InfoTemplate',
-   'dijit/Tooltip'
+   'dijit/Tooltip',
+   'dijit/form/CheckBox'
 ], function(
    BaseWidget, 
    declare, 
@@ -71,7 +72,8 @@ define([
    Point,
    Dialog,
    InfoTemplate,
-   Tooltip
+   Tooltip,
+   CheckBox
 ) {
    var clazz = declare([BaseWidget], {
 
@@ -179,7 +181,8 @@ define([
       _createUI : function() {
          
          domConstruct.empty(this.domNode);
-            
+          
+         var that = this;
          var bodyColor = Color.fromString(this.config.color || "#ff0000");
          var darkColor = Color.fromString("#000000");
          var titleColor = Color.blendColors(bodyColor, darkColor, .3);
@@ -196,22 +199,18 @@ define([
          }, wContainer);
          on(wTitle, "click", lang.hitch(this, this.gotoURL));
          
-         var wSubTitle = domConstruct.create('span', {
-             class: 'widgetsubTitle',
-             innerHTML: "Disclaimer",
-             id: 'disclaim'
-         }, wContainer);
-
-         new Tooltip({
-            connectId: wSubTitle,
-            label: "THE RPS ASA SOFTWARE IS INTENDED FOR USE BY QUALIFIED USERS WHO WILL EXERCISE SOUND JUDGMENT AND EXPERTISE IN CONNECTION WITH THEIR USE OF THE RPS ASA SOFTWARE. THE EFFECTIVE OPERATION OF THE RPS ASA SOFTWARE DEPENDS, AMONG OTHER THINGS, UPON THE ACCURACY OF DATA INTRODUCED BY USERS OR MADE AVAILABLE BY THIRD PARTIES. TO THE EXTENT THAT THE RPS ASA SOFTWARE INCLUDES DATA PROVIDED BY RPS ASA, SUCH DATA IS FROM PUBLIC OR GOVERNMENTAL SOURCES THAT RPS ASA BELIEVES TO BE RELIABLE, BUT RPS ASA CANNOT BE RESPONSIBLE FOR INACCURATE OR INCOMPLETE DATA. AS A PREDICTIVE TOOL, RPS ASA SOFTWARE CAN BE USED TO PRODUCE APPROXIMATE FORECASTS THAT WILL VARY ACCORDING TO LOCAL CONDITIONS AND THE QUALITY OF THE DATA AVAILABLE FOR THE LOCAL AREA. BY USING THIS SOFTWARE, THE USER AGREES THAT NO LIABILITY IS ACCEPTED BY RPS ASA."
-          });
-
+         
          //latlong
          var latlongTitle = domConstruct.create('div', {
              id: 'latlongText',
              innerHTML: "",
-             style:'padding-left:430px;position: absolute;top:19px'
+             style:'padding-left:420px;position: absolute;top:17px'
+         }, wContainer);
+
+         //logo
+         var logoImage = domConstruct.create('div', {
+             id: 'logoimg',
+             class: 'logoimg'
          }, wContainer);
 
          domStyle.set(wTitle, "backgroundColor", titleColor.toHex());
@@ -350,11 +349,50 @@ define([
          }, wBody);
          var divLocate = domConstruct.create('div', {
             id: 'divLocate',
-            class: 'widgetLocate',
+            class: 'widgetLocateDisabled',
             innerHTML: 'LOCATE'
          }, wBottom);
          on(divLocate, "click", lang.hitch(this, this.toggleLocate));
          
+         var wSubTitle = domConstruct.create('div', {
+             class: 'widgetsubTitle',
+             innerHTML: "Disclaimer",
+             id: 'disclaim'
+         }, wBottom);
+
+         //chk = dojo.create("input", {id:"cbox", type:"checkbox"}, widgetNode);
+         var lbl = dojo.create("label", {innerHTML:"Check to Run", "for":"cbox",
+             onclick: function(b){ 
+              //alert('asdf')
+              that.gotoDisclaimerURL();
+             }}, wSubTitle);
+         var chk = dojo.create("input", {id:"cbox", type:"checkbox"}, wSubTitle);
+         dojo.style(lbl, "marginLeft", ".5em");
+         dojo.style(lbl, "marginRight", ".5em");
+       
+         var checkBox = new CheckBox({
+              name: "checkBox",
+              id: 'checkboxdis',
+              value: "agreed",
+              checked: false,
+              onChange: function(b){ 
+                if (b == true) {
+                    domClass.remove("divLocate", "widgetLocateDisabled");
+                    domClass.add("divLocate", "widgetLocate");
+                 } else {
+                    domClass.add("divLocate", "widgetLocateDisabled");
+                    domClass.remove("divLocate", "widgetLocate");
+                 }
+              }
+          }, chk).startup();
+
+         //checkBox.domNode.appendChild(lbl);
+
+         new Tooltip({
+            connectId: wSubTitle,
+            label: "THE RPS ASA SOFTWARE IS INTENDED FOR USE BY QUALIFIED USERS WHO WILL EXERCISE SOUND JUDGMENT AND EXPERTISE IN CONNECTION WITH THEIR USE OF THE RPS ASA SOFTWARE. THE EFFECTIVE OPERATION OF THE RPS ASA SOFTWARE DEPENDS, AMONG OTHER THINGS, UPON THE ACCURACY OF DATA INTRODUCED BY USERS OR MADE AVAILABLE BY THIRD PARTIES. TO THE EXTENT THAT THE RPS ASA SOFTWARE INCLUDES DATA PROVIDED BY RPS ASA, SUCH DATA IS FROM PUBLIC OR GOVERNMENTAL SOURCES THAT RPS ASA BELIEVES TO BE RELIABLE, BUT RPS ASA CANNOT BE RESPONSIBLE FOR INACCURATE OR INCOMPLETE DATA. AS A PREDICTIVE TOOL, RPS ASA SOFTWARE CAN BE USED TO PRODUCE APPROXIMATE FORECASTS THAT WILL VARY ACCORDING TO LOCAL CONDITIONS AND THE QUALITY OF THE DATA AVAILABLE FOR THE LOCAL AREA. BY USING THIS SOFTWARE, THE USER AGREES THAT NO LIABILITY IS ACCEPTED BY RPS ASA."
+          });
+
          // TIME
          var wTime = domConstruct.create('div', {
              id: 'divTime',
@@ -469,8 +507,8 @@ define([
          this.playing = !this.playing;
       },
       
-      gotoURL: function(){
-        window.open('http://www.asascience.com/software/oilmap/','_new');
+      gotoDisclaimerURL: function(){
+        window.open('http://asascience.com/agreements/oilmap.shtml','_new');
 
       },
       toggleLocate: function() {

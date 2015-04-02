@@ -44,49 +44,61 @@
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000')";
 }
 
+.dijitReset .dijitInputInner  {
+	color:#296196 !important;
+}
+
 .widgetContainer {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 750px;
 	height: 170px;
+	color: #296196 !important;
 	font-family: GILLUBCD;
 	overflow: hidden;
 	display: block;
-	color: #ffffff;
 }
 
 .widgetTitle {
 	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 750px;
-	height: 50px;
-	line-height: 30px;
-	font-family: GILLUBCD;
-	font-size: 23px;
-	display: block;
-	padding: 10px;
-	text-indent: 7px;
-	/*background: url(../images/oilmap.png) no-repeat;
-	background-size: 32px 32px;*/
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 50px;
+  line-height: 30px;
+  padding-left: 28px !important;
+  font-family: GILLUBCD;
+  font-size: 23px;
+  display: block;
+  padding-left: 25px;
+  padding: 10px;
+  text-indent: 7px;
+  background-color: #c2c2c2 !important;
+  background: url(../images/oilmap.png) no-repeat;
+  background-position-y: 7px;
+  background-position-x: 3px;
+  background-size: 29px 29px;
+  background-color: #c2c2c2;
 }
 .widgetsubTitle{
 	position: absolute;
 	left: 0px;
 	padding-top: 12px;
 	width: 750px;
-	padding-left:625px;
+	z-index: 30;
+	padding-left:600px;
 	line-height: 30px;
 	font-family: GILLUBCD;
 	font-size: 12px;
 	overflow: hidden;
+	/*cursor:pointer;*/
 	display: block;
 }
 .widgetspillName{
-	padding-left: 219px;
+	padding-left: 235px;
 	width: 380px;
-	padding-top: 12px;
+	padding-top: 10px;
 }
 .widgetBody {
 	position: absolute;
@@ -99,6 +111,7 @@
 	font-size: 14px;
 	overflow: hidden;
 	display: block;
+	background-color: #eaeaea !important;
 }
 
 .widgetForm {
@@ -151,9 +164,10 @@
 	width: 150px;
 	height: 50px;
 	margin: 0px;
+	z-index: 101;
 	font-size: 14px;
 	line-height: 50px;
-	color: #ffffff;
+	color: #296196;
 	text-align:center;
 	display:block;
 	float: left;
@@ -161,8 +175,36 @@
 	cursor: pointer;
 }
 
+.logoimg {
+	position: absolute;
+	height: 50px;
+	top: 5px;
+	right: 20px;
+	width: 150px;
+	float: right;
+	background: url(../images/rps_asa_logo.png) no-repeat;
+}
+
 .widgetLocateOn {
 	background: url(../images/locate_on.png) no-repeat;
+	pointer-events: all;
+}
+
+.widgetLocateDisabled {
+	position: relative;
+	width: 150px;
+	height: 50px;
+	margin: 0px;
+	z-index: 101;
+	font-size: 14px;
+	line-height: 50px;
+	color: #296196;
+	text-align:center;
+	display:block;
+	float: left;
+	background: url(../images/locate.png) no-repeat;
+	cursor: pointer;
+	pointer-events: none;
 }
 
 .widgetTime{
@@ -172,6 +214,7 @@
 	width: 600px;
 	height: 50px;
 	display:none;
+	z-index: 100;
 }
 
 .widgetPlay {
@@ -209,7 +252,7 @@
 	margin: 0px;
 	font-size: 12px;
 	line-height: 25px;
-	color: #ffffff;
+	color: #296196;
 	text-align:center;
 	display:block;
 }
@@ -218,7 +261,7 @@
 	position: absolute;
 	left: 0px;
 	top: 25px;
-	width: 500px;
+	width: 400px;
 	height: 25px;
 	margin: 0px;
 	font-size: 12px;
@@ -269,7 +312,7 @@
 	background: transparent!important;
 }
 #widget_spillName > div:nth-child(1){
-	background-color: #465874;
+	background-color: #eaeaea;
 	border-radius: 8px;
 }
 .dijitComboBox .dijitArrowButtonInner {
